@@ -1,0 +1,15 @@
+@import 'colors.scss';
+@import 'fonts.scss';
+
+body {
+
+	h1 {
+		color: $mainColor;
+		font-family: $headerFont;
+	}
+
+	h2 {
+		font-family: $paragraphFont;
+		color: red;
+	}
+}

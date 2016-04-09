@@ -1,0 +1,180 @@
+/** Theme Name: Wendi Woo
+Author: Ashley Miller
+March 2016 Update
+**/
+
+@import url(css/normalize.css);
+@import url(css/skeleton.css);
+@import url(css/video.css);
+
+
+body{
+	font-family: "Nobel","Helvetica Neue",sans-serif;
+}
+a {
+	text-decoration: none;
+}
+h5 {margin-bottom: 0px; text-align: center;}
+
+ .row.twelve.columns.nav-bar li{
+	display: inline-block;
+    font-size: 12px;
+    letter-spacing: 1px;
+    position: relative;
+    vertical-align: top;
+    line-height: 80px;
+    text-align: center;
+}
+
+.row.twelve.columns.nav-bar {
+  background-color: white;
+    height: 83px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10001;
+    text-align: center;
+    border-bottom: 1px solid;
+
+}
+
+/** nav mobile **/
+.mobileSocial ul li {
+    padding: 10px 30px;
+    list-style: none;
+}
+li.mobileSocial a {
+  display: inline;
+}
+@media screen and (max-width: 901px) {
+  h1 {
+    display: none;
+  }
+}
+@media screen and (min-width: 900px){
+  li.mobileSocial {
+    display:none;
+  }
+}
+ @media screen and (max-width: 900px) {
+  h3{float: left;}
+}
+.nav-trigger {
+  display: none;
+  text-align: right; 
+}
+.nav-trigger span {
+  display: inline-block;
+  padding: 8px 13px;
+  background-color: #90A3B7;
+  color: white;
+  cursor: pointer;
+  text-transform: uppercase; 
+}
+.nav-trigger span:after {
+  display: inline-block;
+  margin-left: 10px;
+  width: 20px;
+  height: 10px;
+  border-left: solid 10px transparent;
+  border-top: solid 10px #fff;
+  border-right: solid 10px transparent; 
+}
+.nav-trigger span:hover {
+  background-color: #90A3B7 
+}
+.nav-trigger span.open:after {
+  border-left: solid 10px transparent;
+  border-top: none;
+  border-bottom: solid 10px #fff;
+  border-right: solid 10px transparent; 
+}
+.nav-mobile {
+  position: relative;
+  display: none; 
+}
+.nav-mobile ul {
+  display: none;
+  list-style-type: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-color: #90A3B7 
+}
+.nav-mobile li {
+  display: block;
+  z-index: 9999;
+  padding: 5px 0;
+  margin: 0 5px;
+  border-bottom: solid 1px #D7D7D7; 
+}
+.nav-mobile li:last-child {
+  border-bottom: none; 
+  padding: 10px 5px;
+}
+.nav-mobile a {
+  display: block;
+  color: white;
+  padding: 10px 30px; 
+}
+.nav-mobile a:hover {
+  background-color: #90A3B7;
+  color: #fff; 
+}
+ul.expanded {
+  z-index: 9999;
+}
+
+.row.twelve.columns.headerImage {
+  background-image:url("header.png");
+  height: 439px;
+  width: 100%;
+  background: cover;
+}
+/*
+
+.welcome {
+	background: url(wendiMain.jpg) no-repeat right center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+      height: 800px;
+    margin-top: 50px;
+}*/
+
+
+p.six.columns.wendiBio {
+    max-width: 50%;
+    padding: 10% 0 0 3%;
+}
+
+/** posts **/
+
+img {
+	max-width: 100%;
+}
+.news-container, .mainGallery {
+	max-width: 1280px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.post-wrapper {
+	background-color: white;
+    float: left;
+    margin-top: 16px;
+    width: 320px;
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+}
+
+
+dl.gallery-item {
+    max-width: 100%;
+    float: left;
+}
