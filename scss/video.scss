@@ -26,7 +26,7 @@
 /** ifram embed video **/
 .iframe-flexible-container {
     position: relative;
-    padding-bottom: 56.25%;
+    /** padding-bottom: 56.25%; **/
     padding-top: 30px;
     height: 0;
 }
