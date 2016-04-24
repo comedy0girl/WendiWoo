@@ -14,6 +14,7 @@
 	  <meta name="description" content="Fan site dedicated to actress Wendi McLendon-Covey">
 	  <meta name="author" content="">
 
+	  
 	  <script src="<?php bloginfo('template_url') ?>/dist/all.min.js"></script>
 	  
 	  <!-- CSS

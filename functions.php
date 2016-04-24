@@ -120,42 +120,35 @@ return array_merge( $sizes, array(
 //deactivate WordPress function
 add_shortcode('gallery', 'gallery_shortcode');
 
-function wpb_mce_buttons_2($buttons) {
-  array_unshift($buttons, 'styleselect');
-  return $buttons;
+// latest images shortcode 
+add_shortcode('images', 'latest_images_shortcode');
+
+function latest_images_shortcode() {
+
+  $args = array('child_of' => 'goldbergs', 'sort_column' => 'post_date', 'sort_order' => 'desc');
+  $galleries = get_pages( $args );
+
+  $count = 0;
+  $limit = 6;
+  foreach ($galleries as $gallery) {
+    if (++$count > $limit) break;
+
+  $args = array(
+   'post_type' => 'attachment',
+   'numberposts' => 1,
+   'post_status' => null,
+   'post_parent' => $gallery->ID
+  );
+
+  $attachments = get_posts( $args );
+     if ( $attachments ) {
+        foreach ( $attachments as $image ) {
+         
+           echo wp_get_attachment_image( $image->ID, 'thumbnail' );
+           
+          }
+     } 
+
 }
-add_filter('mce_buttons_2', 'wpb_mce_buttons_2');
 
-/*
-* Callback function to filter the MCE settings
-*/
-
-function my_mce_before_init_insert_formats( $init_array ) {  
-
-// Define the style_formats array
-
-  $style_formats = array(  
-    // Each array child is a format with it's own settings
-    array(  
-      'title' => 'Full Width',  
-      'block' => 'span',  
-      'classes' => 'full-width',
-      'wrapper' => true,
-      
-    ),  
-  
-    array(  
-      'title' => 'Text Half',  
-      'block' => 'span',  
-      'classes' => 'text-half',
-      'wrapper' => true,
-    ),
-  );  
-  // Insert the array, JSON ENCODED, into 'style_formats'
-  $init_array['style_formats'] = json_encode( $style_formats );  
-  
-  return $init_array;  
-  
-} 
-// Attach callback to 'tiny_mce_before_init' 
-add_filter( 'tiny_mce_before_init', 'my_mce_before_init_insert_formats' ); 
+}

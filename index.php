@@ -58,5 +58,18 @@
 			<?php wp_pagenavi(); ?>
 	</div> -->
 
-	
+<hr>
+	<div class="row mainGallery twelve columns">
+		<div class="gallerySection">
+			<h1>Gallery</h1>
+			<?php
+				$my_id = 228;
+				$post_id_228 = get_post($my_id);
+				$content = $post_id_228->post_content;
+				$content = apply_filters('the_content', $content);
+				$content = str_replace(']]>', ']]>', $content);
+				echo $content;
+			?>
+		</div>
+	</div>
 <?php get_footer(); ?>

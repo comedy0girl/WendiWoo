@@ -9,10 +9,11 @@
 body {
 
 	h1 {
-		color: $mainColor;
+		color: $thirdColor;
 		font-family: $headerFont;
 		font-size: 3em;
    		margin: 0;
+
 	}
 
 	h2, h5 {
@@ -27,8 +28,6 @@ body {
 	}
 }
 
-
-
 li {
    display: inline;
 }
@@ -37,6 +36,19 @@ a{
 }
 ul {
 	margin-bottom: 0;
+}
+
+.fa {
+	color: $thirdColor
+}
+
+.fa:hover {
+	color: #49807d;
+}
+
+hr {
+	width: 100%;
+	color: $fourthColor;
 }
 
 
@@ -76,11 +88,23 @@ div#text {
     	font-weight: bold;
     }
     .widget {
-    	border: 1px solid $mainColor;
+    	border: 1px solid $thirdColor;
     	padding: 30px 10px;
+    	margin-bottom: 20px;
     }
     p {
     	font-family: $paragraphFont;
+    }
+}
+
+.instagramWendi{
+	border: 1px solid $thirdColor;
+	padding: 30px 10px;
+    margin-bottom: 20px;
+
+    li img {
+    	width: 20%;
+    	height: auto;
     }
 }
 
@@ -105,10 +129,11 @@ div#text {
 		font-family: $headerFont;
 		text-transform: uppercase;
 		font-size: 2em;
+		color: $thirdColor;
 	}
 	a {
 		text-decoration: none;
-		color: $mainColor !important;
+		color: $thirdColor !important;
 	}
 	.postInfo {
 		padding: 0 10px;
@@ -173,6 +198,18 @@ span.text-half{
 .bioContainer {
 	width: 90%;
 	margin: 0 auto;
+}
+
+.gallerySection {
+	margin-top: 20px !important;
+	width: 90%;
+	margin: 0 auto;
+	text-align: center;
+	div#gallery-1 {
+		width: 90%;
+		margin: 0 auto;
+	}
+
 }
 
 
