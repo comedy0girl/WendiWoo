@@ -1,9 +1,29 @@
+
+<div class="row twelve columns instagramDesktop">
+  <h2> <span><i class="fa fa-instagram black"></i>  @wendi_mclendon_covey</span></h2>
+  <div class="row twelve columns" id="instafeed"></div>
+</div>
+
 <footer>
+
 	<div class="row twelve columns footerLink">
-		<p class="copyright">I am not associated with Wendi McLendon-Covey.</p>
-     <p class="copyright">I do not know her, work for her or know where she lives - I am just a fan.</p>
-     <p class="copyright">If there is anything on this site you wish to have removed please feel free to get in touch.</p>
+    
+		  <p>© Copyright @wendifanste</p>
+    
+    <!-- <div class="six columns footerLinks">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/biography/">Wendi</a></li>
+        <li><a href="/gallery-2/">Gallery</a></li>
+        <li><a href="/articlesmain/">Press</a></li>
+        <li><a href="/audio/">Audio</a></li>
+        <li><a href="/fan-downloads/">Downloads</a></li>
+        <li><a href="http://www.podcastgarden.com/podcast/goldnerds">The Goldnerds Podcast</a></li>
+        <li><a href="/contact/">Website Info</a></li>
+      </ul>
+    </div> -->
 	</div>
+
 </footer>
 
 </div>
@@ -12,9 +32,7 @@
 <?php wp_enqueue_script("jquery"); ?>
 
 <script src="http://api.html5media.info/1.1.5/html5media.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-<script type="text/javascript" src="<?php bloginfo('template_url') ?>/js/script.js"></script>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.js"></script>
 
 <script type="text/javascript">
 
@@ -49,6 +67,8 @@
 </script>
 
 <?php wp_footer(); ?> 
+
+
 
 </body>
 </html>

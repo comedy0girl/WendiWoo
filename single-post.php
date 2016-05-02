@@ -37,7 +37,7 @@
 			<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
 			<?php endif; ?>
 
-			<div class="relatedposts">
+			<div class="row relatedposts">
 				<?php $orig_post = $post;
 				global $post;
 				$categories = get_the_category($post->ID);

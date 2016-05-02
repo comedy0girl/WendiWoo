@@ -1,6 +1,7 @@
 <?php include (TEMPLATEPATH . '/includes/_wrapper.php'); ?>
 
-  <div class="row twelve columns container">
+<div class="row twelve columns container">
+
   	<header>
   		<div class="topBar">
   			<div class="logoWrapper">

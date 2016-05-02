@@ -12,19 +12,14 @@
 					<h1><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h1>
 
 					<div class="postInfo">
-					<span class="post-info-date">
-					::before
-						<span class="cal-month"><?php the_time('F') ?></span>
-						<span class="cal-day"><?php the_time('j') ?></span>
-						<span class="cal-year"><?php the_time('Y')?></span> 
-					</span>
-						<!-- / 
+						<div class="postDate">
+							<span><?php the_time('F') ?> <?php the_time('j') ?> <?php the_time('Y')?></span>
+						</div>
 						<span><?php	$categories = get_the_category();
 							if ( ! empty( $categories ) ) {
 							    echo esc_html( $categories[0]->name );   
 							} 
-						?></span> -->
-
+						?></span>
 					</div>
 					
 					<div class="postImage">
@@ -57,19 +52,18 @@
 	<!-- 	<div class="post-nav">
 			<?php wp_pagenavi(); ?>
 	</div> -->
-
-<hr>
 	<div class="row mainGallery twelve columns">
-		<div class="gallerySection">
+	
+		<!-- <div class="gallerySection">
 			<h1>Gallery</h1>
 			<?php
-				$my_id = 228;
-				$post_id_228 = get_post($my_id);
-				$content = $post_id_228->post_content;
+				$my_id = 428;
+				$post_id_428 = get_post($my_id);
+				$content = $post_id_428->post_content;
 				$content = apply_filters('the_content', $content);
 				$content = str_replace(']]>', ']]>', $content);
 				echo $content;
 			?>
-		</div>
+		</div> -->
 	</div>
 <?php get_footer(); ?>

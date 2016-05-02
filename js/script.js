@@ -10,6 +10,17 @@ $(document).ready(function(){
         }
     });
 
+
+    var feed = new Instafeed({
+        get: 'user',
+        userId: '1561907447',
+        limit: 10,
+        sortBy: 'most-recent',
+        clientId: '3bfba065cf224b38b146d6b02db4b9f5'
+    });
+    feed.run();
+    
+
     $(window).scroll(function(){
         if ($(window).scrollTop() >= 130) {
             $('.nav-bar').addClass('fixed');

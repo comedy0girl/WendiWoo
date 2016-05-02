@@ -17,7 +17,7 @@ body {
 	}
 
 	h2, h5 {
-		font-family: $subheaderFont;
+		
 		font-size: 1em;
 		letter-spacing: 0.1rem;
 		text-transform: uppercase;
@@ -76,9 +76,13 @@ hr {
 
 div#text {
     margin: 10px 0px;
-    border: 1px solid;
+    border: 3px solid;
     padding: 20px 0px;
     text-align: center;
+    h2{
+    	font-family: $extrasFont;
+    	color: $fourthColor;
+    }
 }
 .row.three.columns.sidebar {
     text-align: center;
@@ -88,7 +92,7 @@ div#text {
     	font-weight: bold;
     }
     .widget {
-    	border: 1px solid $thirdColor;
+    	border: 3px solid $thirdColor;
     	padding: 30px 10px;
     	margin-bottom: 20px;
     }
@@ -98,9 +102,23 @@ div#text {
 }
 
 .instagramWendi{
-	border: 1px solid $thirdColor;
+	border: 3px solid $thirdColor;
 	padding: 30px 10px;
     margin-bottom: 20px;
+    height: 150px;
+    .newImages{
+    	width: 90%;
+    	margin: 0 auto;
+    }
+    img {
+    	width: 33%;
+    	height: auto;
+    	float: left;
+    	opacity: 0.5;
+    }
+    img:hover {
+    	opacity: 1;
+    }
 
     li img {
     	width: 20%;
@@ -129,17 +147,22 @@ div#text {
 		font-family: $headerFont;
 		text-transform: uppercase;
 		font-size: 2em;
-		color: $thirdColor;
+		color: $fourthColor;
 	}
 	a {
 		text-decoration: none;
-		color: $thirdColor !important;
+		color: $fourthColor !important;
 	}
 	.postInfo {
 		padding: 0 10px;
 		font-family: $extrasFont;
 		font-weight: bold;
 		margin-bottom: 10px;
+		.before{
+			border-bottom: 3px solid $thirdColor;
+			width: 10px;
+			height: 10px;
+		}
 	}
 
 	img.alignnone {
@@ -147,6 +170,31 @@ div#text {
 		height: auto;
 	}
 }
+
+.postDate {
+	font-family: $paragraphFont;
+}
+	.postDate span {
+	  display: inline-block;
+	  position: relative;  
+	}
+	.postDate span:before,
+	.postDate span:after {
+	  content: "";
+	  position: absolute;
+	  height: 11px;
+	  border-bottom: 1px solid $thirdColor;
+	  top: 0;
+	  width: 45%;
+	}
+	.postDate span:before {
+	  right: 100%;
+	  margin-right: 15px;
+	}
+	.postDate span:after {
+	  left: 100%;
+	  margin-left: 15px;
+	}	
 
 .single-post-wrapper {
 	text-align: center;
@@ -179,9 +227,27 @@ div#text {
 	}
 }
 
+.row.relatedposts {
+	text-align: center;
+	 h2 {
+    	margin-bottom: 0px;
+    }
+}
+
 .relatedPost {
-    width: 25%;
+   width: 25%;
     float: left;
+    padding: 10px;
+    h3 {
+    	font-size: 2rem;
+    	margin-bottom: 0px;
+    }
+
+}
+
+div#related_posts {
+    margin: 0 auto;
+    width: 90%;
 }
 
 span.full-width {
@@ -213,12 +279,18 @@ span.text-half{
 }
 
 
-.row.twelve.columns.footerLink {
+.row.ten.columns.footerLink {
     padding: 20px;
     background: $mainColor;
     font-family: $subheaderFont;
+    height: 100px;
+    margin-top:-9px;
 }
-
+.footerText{
+	position: absolute;
+	bottom: 0;
+	margin-bottom: 20px;
+}
 
 p.copyright {
 	font-family: $paragraphFont;
@@ -230,10 +302,58 @@ p.copyright {
 
 .post_info_date:before {
 	content: "";
-    border-bottom: 1px solid #be9656;
+    border-bottom: 3px solid #be9656;
     width: 100%;
     position: absolute;
     left: 0;
     top: 50%;
     z-index: 0;
 }
+
+.in-grid-4.square-image {
+	.lightwidget.square-image .in-image {
+
+	}
+}
+
+#instafeed img {
+	width: 10% !important;
+	opacity: 0.5;
+	@media screen and (max-width: 800px){
+		width: 20% !important;
+		margin-top: -9px;
+	}
+
+}
+
+.instagramDesktop {
+	i.fa.fa-instagram.black {
+		color: black;
+	}
+	text-align: center;
+	h2 {
+		font-family: $subheaderFont;
+	}
+}
+
+.instagramDesktop span {
+  display: inline-block;
+  position: relative;  
+}
+.instagramDesktop span:before,
+.instagramDesktop span:after {
+  content: "";
+  position: absolute;
+  height: 11px;
+  border-bottom: 1px solid $thirdColor;
+  top: 0;
+  width: 20%;
+}
+.instagramDesktop span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+.instagramDesktop span:after {
+  left: 100%;
+  margin-left: 15px;
+}	
