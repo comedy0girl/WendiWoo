@@ -29,6 +29,10 @@
 	</head>
 	<body>
 
+	<div id="slideout">
+		<?php include (TEMPLATEPATH . '/includes/_slide-out.php'); ?>	
+	</div>
+
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
  

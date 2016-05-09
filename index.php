@@ -2,7 +2,7 @@
 
 	<div class="news-container twelve columns">
 
-		<div class="row twelve columns bannerImageMain" style="background-image: url('<?php bloginfo('template_url') ?>/header.png');">
+		<div class="row twelve columns bannerImageMain" style="background-image: url('<?php bloginfo('template_url') ?>/wendiWoo.png');">
 			</div>
 			
 		<div class="row nine columns content-post">

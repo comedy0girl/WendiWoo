@@ -6,11 +6,7 @@
 dl.gallery-item {
 	float: left;
 	margin: 0px;
-    opacity: 0.2;
-    background-color: $mainColor;
-    &:hover {
-       opacity: 1;
-    }
+    opacity: 0.5;
 }
 
 .galleryContent {
@@ -31,3 +27,7 @@ img {
 }
 
 
+attachment-main-gallery-size size-main-gallery-size {
+    width: 200px;
+    height: 200px;
+}

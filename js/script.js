@@ -1,15 +1,29 @@
 $(document).ready(function(){
-    $(".nav-mobile").html($(".row.twelve.columns.nav-bar").html());
-    $(".nav-trigger span").click(function(){
-        if ($(".nav-mobile ul").hasClass("expanded")) {
-            $(".nav-mobile ul.expanded").removeClass("expanded").slideUp(250);
-            $(this).removeClass("open");
+    
+    $("li#clickme").click(function() {
+        if ($(".mobile_menu_wrapper").hasClass("show")) {
+            $(".mobile_menu_wrapper").removeClass("show").fadeOut('slow');
         } else {
-            $(".nav-mobile ul").addClass("expanded").slideDown(250);
-            $(this).addClass("open");
+            $(".mobile_menu_wrapper").addClass("show").addClass('mask').fadeIn('slow');
+            $(".body").addClass("mask");
         }
     });
 
+    $("#close_mobile_menu").click(function() {
+            $(".mobile_menu_wrapper").removeClass("show").fadeIn('slow');      
+    });
+
+   $("li#shareMe").click(function() {
+        $(".body").addClass("mask");
+    });
+
+
+    $('a.back-to-top').click(function() {
+    $('html, body').animate({
+        scrollTop: 0
+    }, 700);
+    return false;
+});
 
     var feed = new Instafeed({
         get: 'user',
@@ -31,17 +45,15 @@ $(document).ready(function(){
     });
 
      $(window).scroll(function(){
-        if ($(window).scrollTop() >= 110) {
-          
-            $('.bannerImage').addClass('blur');
+        if ($(window).scrollTop() >= 130) {
+            $('.bannerImage, .bannerImageMain').addClass('blur');
         }
         else {
-           
-           $('.bannerImage').removeClass('blur');
+           $('.bannerImage, .bannerImageMain').removeClass('blur');
         }
     });
 
  
     //wrap all iframe videos in class to make responsive
-    $('iframe').wrap("<div class='iframe-flexible-container'></div>");
+    $('iframe').wrap("<div class='videowrapper'></div>");
 });

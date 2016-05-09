@@ -102,8 +102,8 @@ add_filter('image_send_to_editor','give_linked_images_class',10,8);
 add_theme_support('post-thumbnails');
 
 if ( function_exists( 'add_image_size' ) ) {
-add_image_size( 'main-gallery-size', 150, 150, array('center', 'center') ); //(cropped)
-add_image_size( 'lower-gallery-size', 100, 100, array('center', 'center') ); //(cropped)
+add_image_size( 'main-gallery-size', 200, 200, array('center', 'center') ); //(cropped)
+add_image_size( 'lower-gallery-size', 150, 150, array('center', 'center') ); //(cropped)
 }
 
 
@@ -116,36 +116,3 @@ return array_merge( $sizes, array(
 }
 //deactivate WordPress function
 add_shortcode('gallery', 'gallery_shortcode');
-
-// latest images shortcode 
-// add_shortcode('images', 'latest_images_shortcode');
-
-// function latest_images_shortcode() {
-
-//   $args = array('child_of' => 'goldbergs', 'sort_column' => 'post_date', 'sort_order' => 'desc');
-//   $galleries = get_pages( $args );
-
-//   $count = 0;
-//   $limit = 6;
-//   foreach ($galleries as $gallery) {
-//     if (++$count > $limit) break;
-
-//   $args = array(
-//    'post_type' => 'attachment',
-//    'numberposts' => 1,
-//    'post_status' => null,
-//    'post_parent' => $gallery->ID
-//   );
-
-//   $attachments = get_posts( $args );
-//      if ( $attachments ) {
-//         foreach ( $attachments as $image ) {
-         
-//            echo wp_get_attachment_image( $image->ID, 'thumbnail' );
-           
-//           }
-//      } 
-
-// }
-
-// }

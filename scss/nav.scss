@@ -19,7 +19,7 @@
     transition: height 0.5s,background 0.5s;
 }
 
-.logoWrapper {
+/** .logoWrapper {
   text-align: center;
     padding: 20px 0 20px 0;
     overflow: hidden;
@@ -35,7 +35,55 @@
       text-align: left;
       position: absolute;
   }
+  .shareWrapper {
+  float: left;
+  position: absolute;
+    text-align: right;
+
+  }
+} **/
+
+
+.shareWrapper {
+  width: 20%;
+  padding: 10px;
+  box-sizing: border-box;
+  float:left;
+  text-align: center;
+  ul li a i {
+    line-height: 18px;
+    font-size: 18px;
+    display: inline;
+  }
+  li {
+    padding: 5px;
+  }
 }
+.logo.header-center {
+  width:60%;
+  padding:10px;
+  float:left;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.socialWrapper {
+  float: left;
+  width: 20%;
+  padding: 10px;    
+  box-sizing: border-box;
+  text-align: center;
+  ul li a i {
+    line-height: 18px;
+    font-size: 18px;
+    display: inline;
+  }
+  li {
+    padding: 5px;
+  }
+}
+
+
 
 
 .navBySeason, .nav-bar {
@@ -67,16 +115,6 @@
 
 
 
-.socialWrapper ul li a i {
-    line-height: 18px;
-    font-size: 18px;
-    display: inline;
-}
-
-.socialWrapper li {
-  padding: 5px;
-}
-
 .nav-bar{
     background:white;
     postion:fixed;
@@ -86,10 +124,11 @@
     position: fixed;
     top:0; left:0;
     width: 100%; 
-    height: 75px;
+    height: 40px;
     z-index: 9999;
+    opacity: 0.9;
   ul {
-  margin-top: 49px;
+  margin-top: 12px;
   border-bottom: 1px solid $mainColor;
   }
 }
@@ -101,105 +140,106 @@ ul.mainNav {
 }
 
 
-
-
-
-#pm_menu {
-    position: fixed; height: 100%; width: 300px; background:red; top: 0; z-index: 1001;
-    -webkit-animation: backSlideOut .3s both ease;
-    -moz-animation: backSlideOut .3s both ease;
-    animation: backSlideOut .3s both ease;
-  }
-  #pm_menu.pm_open{
-    left: 0px;
-    -webkit-animation: backSlideIn .5s both ease;
-    -moz-animation: backSlideIn .5s both ease;
-    animation: backSlideIn .5s both ease;
-  }
-  .pm_overlay{
-    width: 100%;
-    height: 100%;
-    padding: 0;
-    margin: 0;
+.mobile_menu_wrapper {
+    right: 0px;
+    -webkit-transition: -webkit-transform 500ms ease;
+    -moz-transition: transform 500ms ease;
+    -o-transition: -o-transform 500ms ease;
+    transition: transform 500ms ease;
+    -webkit-transform: translate(360px, 0px);
+    -ms-transform: translate(360px, 0px);
+    transform: translate(360px, 0px);
+    -o-transform: translate(360px, 0px);
+    -webkit-backface-visibility: hidden;
+    -webkit-font-smoothing: subpixel-antialiased;
+    -webkit-overflow-scrolling: touch;
+    width: 360px;
+    padding: 43px;
+    box-sizing: border-box;
+    background: white;
     position: fixed;
-    z-index: 1000;
-    background: rgba(0,0,0,0.5);
-    left: 0;
-    top: 0;
-    -webkit-animation: fadeOut .5s both ease;
-    -moz-animation: fadeOut .5s both ease;
-    animation: fadeOut .5s both ease;
-  }
-  .pm_overlay.pm_show{
-    display: block;
-    -webkit-animation: fadeIn .3s both ease;
-    -moz-animation: fadeIn .3s both ease;
-    animation: fadeIn .3s both ease;
-  }
-  .pm_overlay.pm_hide{
-    display: none;
-  }
-  /* Keyframes */
-  /*empty*/
-  @-webkit-keyframes empty {
-    0% {opacity: 1}
-  }
-  @-moz-keyframes empty {
-    0% {opacity: 1}
-  }
-  @keyframes empty {
-    0% {opacity: 1}
-  }
-  @-webkit-keyframes fadeIn {
-    0% { opacity:0; }
-    100% { opacity:1; }
-  }
-  @-moz-keyframes fadeIn {
-    0% { opacity:0; }
-    100% { opacity:1; }
-  }
-  @keyframes fadeIn {
-    0% { opacity:0; }
-    100% { opacity:1; }
-  }
-  @-webkit-keyframes fadeOut {
-    0% { opacity:1; }
-    100% { opacity:0; display: none; }
-  }
-  @-moz-keyframes fadeOut {
-    0% { opacity:1; }
-    100% { opacity:0; display: none; }
-  }
-  @keyframes fadeOut {
-    0% { opacity:1; }
-    100% { opacity:0; display: none; }
-  }
-  @-webkit-keyframes backSlideOut {
-    0% { opacity: 1; -webkit-transform: translateX(0px); }
-    50% { opacity: 1; }
-    100% { opacity: 0; -webkit-transform: translateX(-100%); }
-  }
-  @-moz-keyframes backSlideOut {
-    0% { opacity: 1; -webkit-transform: translateX(0px); }
-    50% { opacity: 1; }
-    100% { opacity: 0; -webkit-transform: translateX(-100%); }
-  }
-  @keyframes backSlideOut {
-    0% { opacity: 1; -webkit-transform: translateX(0px); }
-    50% { opacity: 1; }
-    100% { opacity: 0; -webkit-transform: translateX(-100%); }
-  }
-  @-webkit-keyframes backSlideIn {
-    0% { opacity: 0; -webkit-transform: translateX(-100%); }
-    100% { opacity: 1; -webkit-transform: translateX(0px); }
-  }
-  @-moz-keyframes backSlideIn {
-    0% { opacity: 0; -webkit-transform: translateX(-100%); }
-    100% { opacity: 1; -webkit-transform: translateX(0px); }
-  }
-  @keyframes backSlideIn {
-    0% { opacity: 0; -webkit-transform: translateX(-100%); }
-    100% { opacity: 1; -webkit-transform: translateX(0px); }
-  }
+    top: 0px;
+    height: 100%;
+    z-index: 999;
+    color: #999;
+}
+.show {
+  right: 350px;
+  overflow-y: scroll;
+  -webkit-transition: -webkit-transform 500ms ease-in;
+    -moz-transition: transform 500ms ease-in;
+    -o-transition: -o-transform 500ms ease-in;
+    transition: transform 500ms ease;
+    -webkit-transform: translate(360px, 0px);
+    -ms-transform: translate(360px, 0px);
+    transform: translate(360px, 0px);
+    -o-transform: translate(360px, 0px);
+    -webkit-backface-visibility: hidden;
+    -webkit-font-smoothing: subpixel-antialiased;
+    -webkit-overflow-scrolling: touch;
+}
 
-   
+ul#mobile_main_menu {
+  li {
+    display: block;
+    a {
+      font-family: $subheaderFont;
+      color: black;
+      &hover {
+        color: grey;
+      }
+    }
+  }
+}
+
+
+#overlay{ /* we set all of the properties for are overlay */
+    height:10%;
+    width:35%;
+    margin:0 auto;
+    background:white;
+    color:black;
+    padding:10px;
+    position:absolute;
+    top:30%;
+    left:25%;
+    right: 25%;
+    z-index:1000;
+    display:none;
+}
+
+#mask{ /* create are mask */
+    position:fixed;
+    top:0;
+    left:0;
+    background:rgba(0,0,0,0.6);
+    z-index:500;
+    width:100%;
+    height:100%;
+    display:none;
+}
+/* use :target to look for a link to the overlay then we find are mask */
+#overlay:target, #overlay:target + #mask{
+    display:block;
+    opacity:1;
+}
+.close{ /* to make a nice looking pure CSS3 close button */
+    display:block;
+    position:absolute;
+    top:-20px;
+    right:-20px;
+    background:red;
+    color:white;
+    height:40px;
+    width:40px;
+    line-height:40px;
+    font-size:35px;
+    text-decoration:none;
+    text-align:center;
+    font-weight:bold;
+    -webkit-border-radius:40px;
+    -moz-border-radius:40px;
+    -o-border-radius:40px;
+    border-radius:40px;
+}
+

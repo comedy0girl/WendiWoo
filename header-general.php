@@ -6,15 +6,23 @@
   			<div class="logoWrapper">
 		  		<div class="socialWrapper">
 		  			<ul>
-			  			<li><a href="https://twitter.com/wendifansite"><i class="fa fa-twitter "></a></i></li>
-						<li><a href="http://instagram.com/wendimc_fansite/"><i class="fa fa-instagram "></a></i></li>
-						<li><a href="https://www.facebook.com/wendimclendoncoveyfan"><i class="fa fa-facebook"></a></i></li>
+			  			<li><a href="https://twitter.com/wendifansite"><i class="fa fa-twitter "></i></a></li>
+						<li><a href="http://instagram.com/wendimc_fansite/"><i class="fa fa-instagram "></i></a></li>
+						<li><a href="https://www.facebook.com/wendimclendoncoveyfan"><i class="fa fa-facebook"></i></a></li>
 					</ul>
 		  		</div>
 		
 		        <div class="logo header-center">
 				   <h1>Wendi MC Fansite</h1>
 				   <h2>Your fansite source for Wendi McLendon-Covey</h2>
+				</div>
+
+				<div class="shareWrapper">
+					<ul>
+						<li><i id="shareMe" class="fa fa-share-alt" aria-hidden="true"></i></li>
+						<li><i id="slideOut" class="fa fa-search" aria-hidden="true"></i></li>
+						<li><i id="slideOut" class="fa fa-bars" aria-hidden="true"></i></li>
+					</ul>
 				</div>
 			</div><!-- logowrapper -->
 			<div class="clear"></div>

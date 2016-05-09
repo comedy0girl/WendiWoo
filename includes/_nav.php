@@ -9,9 +9,4 @@
 		<li><a href="http://www.podcastgarden.com/podcast/goldnerds">The Goldnerds Podcast</a></li>
 		<li><a href="/contact/">Website Info</a></li>
 	</ul>
-
-	<div class="nav-trigger">
-		<span><!-- <i class="fa fa-bars"></i> -->YES</span>
-	</div><!--- trigger -->
-	<nav class="nav-mobile"></nav>
 </div><!-- 12 columns -->

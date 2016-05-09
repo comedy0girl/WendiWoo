@@ -14,7 +14,7 @@
 				} 
 			?>
 		</div>
-		<div class="galleryContent">
+		<div class="row twelve columns galleryContent">
 			<div class="galleryContainer">
 				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 				<?php the_content(); ?>
@@ -24,6 +24,6 @@
 				<?php endif; ?>	
 			</div>	
 		</div>
-	<div><!-- gallery container -->
+	</div><!-- gallery container -->
 
 <?php get_footer(); ?>

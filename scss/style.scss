@@ -21,6 +21,7 @@ body {
 		font-size: 1em;
 		letter-spacing: 0.1rem;
 		text-transform: uppercase;
+		margin-bottom: 4px;
 	}
 
 	li {
@@ -48,7 +49,7 @@ ul {
 
 hr {
 	width: 100%;
-	color: $fourthColor;
+	color: $thirdColor;
 }
 
 
@@ -56,23 +57,40 @@ hr {
     clear:both;
 }
 
+.headerBorder {
+    border-bottom: 1px solid $thirdColor;
+    width: 32%;
+    margin: 0 auto;
+}
+
 
 .bannerImageMain {
 	height: 400px;
 	background-color: $mainColor;
-	background-position: right center;
+	background-position: center center;
 	background-repeat: no-repeat;
 	margin-bottom: 25px;
 }
 
 .blur {
-	opacity:5;
-	-webkit-filter: blur(5px);
-  -moz-filter: blur(5px);
-  -o-filter: blur(5px);
-  -ms-filter: blur(5px);
-  filter: blur(5px);
+	opacity:0.8;
+	-webkit-filter: blur(3px);
+  -moz-filter: blur(3px);
+  -o-filter: blur(3px);
+  -ms-filter: blur(3px);
+  filter: blur(3px);
 }
+
+/** div.fadeMe {
+  opacity:    0.5; 
+  background: #000; 
+  width:      100%;
+  height:     100%; 
+  z-index:    10;
+  top:        0; 
+  left:       0; 
+  position:   fixed; 
+} **/
 
 div#text {
     margin: 10px 0px;
@@ -81,7 +99,7 @@ div#text {
     text-align: center;
     h2{
     	font-family: $extrasFont;
-    	color: $fourthColor;
+    	color: $thirdColor;
     }
 }
 .row.three.columns.sidebar {
@@ -92,7 +110,7 @@ div#text {
     	font-weight: bold;
     }
     .widget {
-    	border: 3px solid $thirdColor;
+    	border: 1px solid $fourthColor;
     	padding: 30px 10px;
     	margin-bottom: 20px;
     }
@@ -102,7 +120,7 @@ div#text {
 }
 
 .instagramWendi{
-	border: 3px solid $thirdColor;
+	border: 1px solid $fourthColor;
 	padding: 30px 10px;
     margin-bottom: 20px;
     height: 150px;
@@ -114,12 +132,7 @@ div#text {
     	width: 33%;
     	height: auto;
     	float: left;
-    	opacity: 0.5;
     }
-    img:hover {
-    	opacity: 1;
-    }
-
     li img {
     	width: 20%;
     	height: auto;
@@ -147,11 +160,11 @@ div#text {
 		font-family: $headerFont;
 		text-transform: uppercase;
 		font-size: 2em;
-		color: $fourthColor;
+		color: $thirdColor;
 	}
 	a {
 		text-decoration: none;
-		color: $fourthColor !important;
+		color: $thirdColor !important;
 	}
 	.postInfo {
 		padding: 0 10px;
@@ -279,12 +292,27 @@ span.text-half{
 }
 
 
-.row.ten.columns.footerLink {
+.row.twelve.columns.footerLink {
     padding: 20px;
     background: $mainColor;
     font-family: $subheaderFont;
     height: 100px;
     margin-top:-9px;
+    color: #9E9898;
+   	p{
+   		float: left;
+   		margin: 10px 0 0 0;
+   	}
+   	ul.footerLinks {
+   		float: right;
+   		margin: 10px 0 0 0;
+   		li {
+   			padding: 0 3px;
+   		}
+   		a{
+   			color: #9E9898;
+   		}
+   	}
 }
 .footerText{
 	position: absolute;
@@ -318,7 +346,6 @@ p.copyright {
 
 #instafeed img {
 	width: 10% !important;
-	opacity: 0.5;
 	@media screen and (max-width: 800px){
 		width: 20% !important;
 		margin-top: -9px;
@@ -357,3 +384,35 @@ p.copyright {
   left: 100%;
   margin-left: 15px;
 }	
+
+
+.mainNav {
+	@media screen and (max-width: 850px) {
+		display: none;
+	}
+}
+
+/**.nav-mobile li{
+	display: block;
+		background: $mainColor;
+		color: white;
+} **/
+
+div#text-3 a {
+	padding: 0 8px;
+}
+
+//back to the top
+a.back-to-top {
+	width: 60px;
+	height: 60px;
+	text-indent: -9999px;
+	z-index: 999;
+	right: 20px;
+	bottom: 20px;
+	background: white ;
+	padding: 8px;
+}
+
+
+

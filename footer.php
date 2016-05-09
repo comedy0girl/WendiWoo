@@ -1,4 +1,4 @@
-
+<div class="clear"></div>
 <div class="row twelve columns instagramDesktop">
   <h2> <span><i class="fa fa-instagram black"></i>  @wendi_mclendon_covey</span></h2>
   <div class="row twelve columns" id="instafeed"></div>
@@ -7,21 +7,17 @@
 <footer>
 
 	<div class="row twelve columns footerLink">
-    
-		  <p>© Copyright @wendifanste</p>
-    
-    <!-- <div class="six columns footerLinks">
-      <ul>
+  <hr/>
+      <p>© Copyright @wendifanste</p>
+      <ul class="footerLinks">
         <li><a href="/">Home</a></li>
         <li><a href="/biography/">Wendi</a></li>
         <li><a href="/gallery-2/">Gallery</a></li>
         <li><a href="/articlesmain/">Press</a></li>
         <li><a href="/audio/">Audio</a></li>
         <li><a href="/fan-downloads/">Downloads</a></li>
-        <li><a href="http://www.podcastgarden.com/podcast/goldnerds">The Goldnerds Podcast</a></li>
-        <li><a href="/contact/">Website Info</a></li>
+        <li><a href="#" class="back-to-top">TOP</a></li>
       </ul>
-    </div> -->
 	</div>
 
 </footer>
@@ -68,7 +64,6 @@
 
 <?php wp_footer(); ?> 
 
-
-
+<div id="overlay_background"></div>
 </body>
 </html>
