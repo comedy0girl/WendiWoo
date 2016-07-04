@@ -1,26 +1,25 @@
+@import 'framework.scss';
+@import 'normalize.scss';
 @import 'colors.scss';
 @import 'gallery.scss';
 @import 'fonts.scss';
 @import 'nav.scss';
 @import 'video.scss';
-@import 'framework.scss';
-@import 'normalize.scss';
+@import 'articles.scss';
+
 
 body {
 
 	h1 {
 		color: $thirdColor;
 		font-family: $headerFont;
-		font-size: 3em;
+		font-size: 2.5em;
    		margin: 0;
-
 	}
 
 	h2, h5 {
-		
 		font-size: 1em;
 		letter-spacing: 0.1rem;
-		text-transform: uppercase;
 		margin-bottom: 4px;
 	}
 
@@ -74,23 +73,7 @@ hr {
 
 .blur {
 	opacity:0.8;
-	-webkit-filter: blur(3px);
-  -moz-filter: blur(3px);
-  -o-filter: blur(3px);
-  -ms-filter: blur(3px);
-  filter: blur(3px);
 }
-
-/** div.fadeMe {
-  opacity:    0.5; 
-  background: #000; 
-  width:      100%;
-  height:     100%; 
-  z-index:    10;
-  top:        0; 
-  left:       0; 
-  position:   fixed; 
-} **/
 
 div#text {
     margin: 10px 0px;
@@ -119,25 +102,7 @@ div#text {
     }
 }
 
-.instagramWendi{
-	border: 1px solid $fourthColor;
-	padding: 30px 10px;
-    margin-bottom: 20px;
-    height: 150px;
-    .newImages{
-    	width: 90%;
-    	margin: 0 auto;
-    }
-    img {
-    	width: 33%;
-    	height: auto;
-    	float: left;
-    }
-    li img {
-    	width: 20%;
-    	height: auto;
-    }
-}
+
 
 .post-wrapper:first-child {
 	width: 90%;
@@ -149,28 +114,33 @@ div#text {
 .post-wrapper {
 	text-align: center;
 	font-family: $paragraphFont;
-	margin: 20px;
+	margin: 19px;
 	@media screen and (min-width:800px){
 		width: 45%;
 		float: left;
+		p{
+			font-size: 1.2rem;
+		}
 	}
 	
 	h1 {
 		margin: 0px;
 		font-family: $headerFont;
 		text-transform: uppercase;
-		font-size: 2em;
-		color: $thirdColor;
+		font-size: 2rem;
+		color: $mainColor;
 	}
 	a {
 		text-decoration: none;
-		color: $thirdColor !important;
+		color: $mainColor !important;
 	}
+
 	.postInfo {
 		padding: 0 10px;
 		font-family: $extrasFont;
-		font-weight: bold;
+		font-weight: normal;
 		margin-bottom: 10px;
+		color: $thirdColor;
 		.before{
 			border-bottom: 3px solid $thirdColor;
 			width: 10px;
@@ -189,7 +159,9 @@ div#text {
 }
 	.postDate span {
 	  display: inline-block;
-	  position: relative;  
+	  position: relative; 
+	  font-size: 1.3rem; 
+	  font-style: italic;
 	}
 	.postDate span:before,
 	.postDate span:after {
@@ -225,8 +197,8 @@ div#text {
 	}
 	.postInfo {
 		padding: 0 10px;
-		font-family: $extrasFont;
-		font-weight: bold;
+		font-family: $paragraphFont;
+		font-weight: normal;
 		margin-bottom: 10px;
 	}
 
@@ -360,6 +332,9 @@ p.copyright {
 	text-align: center;
 	h2 {
 		font-family: $subheaderFont;
+		@media screen and (max-width: 800px){
+			margin-bottom: 20px;
+		}
 	}
 }
 
@@ -392,11 +367,6 @@ p.copyright {
 	}
 }
 
-/**.nav-mobile li{
-	display: block;
-		background: $mainColor;
-		color: white;
-} **/
 
 div#text-3 a {
 	padding: 0 8px;
@@ -414,5 +384,13 @@ a.back-to-top {
 	padding: 8px;
 }
 
+.textwidget {
+	p{
+		font-size: 1.2rem;
+	}
+	h2 {
+		font-weight: normal;
 
+	}
+}
 

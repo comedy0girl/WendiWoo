@@ -1,5 +1,5 @@
 <!-- Begin mobile menu -->
-	<div class="mobile_menu_wrapper">
+	<div class="mobile_menu_wrapper" id="mobile_menu_wrapper">
 		<a id="close_mobile_menu" href="javascript:;"><i class="fa fa-close"></i></a>
 		
     	    	
@@ -7,13 +7,24 @@
 	    	<ul id="mobile_main_menu" class="mobile_main_nav">
 	    		<li><a href="/">Home</a></li>
 				<li><a href="/biography/">Wendi</a></li>
-				<li><a href="/gallery-2/">Gallery</a></li>
+				<li><a href="/gallery-2/">Gallery </a> <i class="fa fa-chevron-right" id="gimmeMore" aria-hidden="true"></i></li>
+					
 				<li><a href="/articlesmain/">Press</a></li>
 				<li><a href="/audio/">Audio</a></li>
 				<li><a href="/fan-downloads/">Downloads</a></li>
 				<li><a href="http://www.podcastgarden.com/podcast/goldnerds">The Goldnerds Podcast</a></li>
 				<li><a href="/contact/">Website Info</a></li> 
 		    </ul>
+
+		    <ul class="sub-menu" id="sub_menu">
+		    <a id="menuBack">Back</a>
+				<li><a href="/">TV Shows</a></li>
+				<li><a href="/biography/">Films</a></li>
+				<li><a href="/gallery-2/">Guest Appearances</a></li>
+				<li><a href="/articlesmain/">Commercials</a></li>
+				<li><a href="/audio/">The Groundlings</a></li>
+				<li><a href="/fan-downloads/">Public Appearances</a></li>
+			</ul>
 
 
 		    <div id="text-2" class="widget widget_text"><h2>About Wendi</h2>			

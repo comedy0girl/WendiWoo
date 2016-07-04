@@ -14,8 +14,8 @@
 		  		</div>
 		
 		        <div class="logo header-center">
-				   <h1>Wendi MC Fansite</h1>
-				   <h2>Your fansite source for Wendi McLendon-Covey</h2>
+				   <h1><a href="/">Wendi MC Fansite</a></h1>
+				    <h2>YOUR FANSITE SOURCE FOR WENDI McLENDON-COVEY</h2>
 				</div>
 
 				<div class="shareWrapper">
@@ -33,7 +33,9 @@
 							<li>Facebook</li>
 							<li>Twitter</li>
 						</div>
-						<div id="mask" class="mask" onclick="document.location=' ';"></div>
+						<div id="mask" class="mask" onclick="document.location=' ';">
+							
+						</div>
 			
 			
 			<div id="menuWrapper">

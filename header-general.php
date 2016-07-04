@@ -14,7 +14,7 @@
 		
 		        <div class="logo header-center">
 				   <h1>Wendi MC Fansite</h1>
-				   <h2>Your fansite source for Wendi McLendon-Covey</h2>
+				    <h2>YOUR FANSITE SOURCE FOR WENDI McLENDON-COVEY</h2>
 				</div>
 
 				<div class="shareWrapper">
