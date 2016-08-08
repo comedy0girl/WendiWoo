@@ -34,6 +34,10 @@ li {
 }
 a{
 	text-decoration: none;
+	color: $thirdColor;
+}
+a:hover{
+	color: $hoverGreen;
 }
 ul {
 	margin-bottom: 0;
@@ -235,8 +239,10 @@ div#text {
 		height: auto;
 	}
 	.postInfo {
-		background: $mainColor;
 		width: 100%;
+		text-transform: uppercase;
+		font-size: 1.5rem;
+		color: $thirdColor;
 	}
 }
 
@@ -298,7 +304,7 @@ span.text-half{
     font-family: $subheaderFont;
     height: 100px;
     margin-top:-9px;
-    color: #9E9898;
+    color: white;
    	p{
    		float: left;
    		margin: 10px 0 0 0;
@@ -310,7 +316,7 @@ span.text-half{
    			padding: 0 3px;
    		}
    		a{
-   			color: #9E9898;
+   			color: white;
    		}
    	}
 }
@@ -410,7 +416,7 @@ a.back-to-top {
 	z-index: 999;
 	right: 20px;
 	bottom: 20px;
-	background: white ;
+	background: $thirdColor ;
 	padding: 8px;
 }
 

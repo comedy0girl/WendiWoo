@@ -9,12 +9,13 @@
 							<span class="cal-month"><?php the_time('F') ?></span>
 							<span class="cal-day"><?php the_time('j') ?></span>
 							<span class="cal-year"><?php the_time('Y')?></span>
-						</div><!-- date -->
-						<?php	$categories = get_the_category();
+							 / <?php	$categories = get_the_category();
 							if ( ! empty( $categories ) ) {
 							    echo esc_html( $categories[0]->name );   
 							} 
 						?>
+						</div><!-- date -->
+						
 					</div>
 
 					<div class="postImage">
