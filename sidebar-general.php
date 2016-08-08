@@ -11,5 +11,8 @@
 
 <?php dynamic_sidebar('right_sidebar'); ?>
 
+<a class="twitter-timeline" href="https://twitter.com/wendimclendonco">Tweets by wendimclendonco</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
 
 
