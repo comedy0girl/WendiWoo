@@ -19,34 +19,9 @@
     transition: height 0.5s,background 0.5s;
 }
 
-/** .logoWrapper {
-  text-align: center;
-    padding: 20px 0 20px 0;
-    overflow: hidden;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    .socialWrapper {
-      width: auto;
-      margin: 0;
-      left: 30px;
-      text-align: left;
-      position: absolute;
-  }
-  .shareWrapper {
-  float: left;
-  position: absolute;
-    text-align: right;
-
-  }
-} **/
-
-
 .shareWrapper {
   width: 20%;
-  padding: 10px;
+  padding:50px 10px 10px;
   box-sizing: border-box;
   float:left;
   text-align: center;
@@ -61,7 +36,7 @@
 }
 .logo.header-center {
   width:60%;
-  padding:10px;
+  padding:50px 10px 10px;
   float:left;
   box-sizing: border-box;
   text-align: center;
@@ -70,7 +45,7 @@
 .socialWrapper {
   float: left;
   width: 20%;
-  padding: 10px;    
+   padding:50px 10px 10px;
   box-sizing: border-box;
   text-align: center;
   ul li a i {
@@ -117,7 +92,7 @@
 
 .nav-bar{
     background:white;
-    postion:fixed;
+    position:fixed;
 }
 
 .nav-bar.fixed {
@@ -128,7 +103,7 @@
     z-index: 9999;
     opacity: 0.9;
   ul {
-  margin-top: 12px;
+  margin-top: 14px;
   border-bottom: 1px solid $mainColor;
   }
 }
@@ -185,8 +160,8 @@ ul#mobile_main_menu {
     a {
       font-family: $subheaderFont;
       color: black;
-      &hover {
-        color: grey;
+      &:hover {
+        color: gray;
       }
     }
   }

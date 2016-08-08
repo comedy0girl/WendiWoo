@@ -1,7 +1,5 @@
 <?php 
 
-
-
 function randomImages_shortcode( $atts ) {
  $query_images_args = array(
     'post_type'      => 'attachment',

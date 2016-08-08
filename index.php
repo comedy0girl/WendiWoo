@@ -48,10 +48,7 @@
 
 
 	</div><!--news container end -->
-						
-	<!-- 	<div class="post-nav">
-			<?php wp_pagenavi(); ?>
-	</div> -->
+
 	<div class="row mainGallery twelve columns">
 	
 		<!-- <div class="gallerySection">

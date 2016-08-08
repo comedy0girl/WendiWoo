@@ -1,180 +1,422 @@
-/** Theme Name: Wendi Woo
-Author: Ashley Miller
-March 2016 Update
-**/
+@import 'colors.scss';
+@import 'gallery.scss';
+@import 'fonts.scss';
+@import 'nav.scss';
+@import 'video.scss';
+@import 'framework.scss';
+@import 'normalize.scss';
 
-@import url(css/normalize.css);
-@import url(css/skeleton.css);
-@import url(css/video.css);
+body {
 
-
-body{
-	font-family: "Nobel","Helvetica Neue",sans-serif;
-}
-a {
-	text-decoration: none;
-}
-h5 {margin-bottom: 0px; text-align: center;}
-
- .row.twelve.columns.nav-bar li{
-	display: inline-block;
-    font-size: 12px;
-    letter-spacing: 1px;
-    position: relative;
-    vertical-align: top;
-    line-height: 80px;
-    text-align: center;
-}
-
-.row.twelve.columns.nav-bar {
-  background-color: white;
-    height: 83px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 10001;
-    text-align: center;
-    border-bottom: 1px solid;
-
-}
-
-/** nav mobile **/
-.mobileSocial ul li {
-    padding: 10px 30px;
-    list-style: none;
-}
-li.mobileSocial a {
-  display: inline;
-}
-@media screen and (max-width: 901px) {
   h1 {
-    display: none;
+    color: $thirdColor;
+    font-family: $headerFont;
+    font-size: 3em;
+      margin: 0;
+
   }
-}
-@media screen and (min-width: 900px){
-  li.mobileSocial {
-    display:none;
+
+  h2, h5 {
+    
+    font-size: 1em;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    margin-bottom: 4px;
   }
-}
- @media screen and (max-width: 900px) {
-  h3{float: left;}
-}
-.nav-trigger {
-  display: none;
-  text-align: right; 
-}
-.nav-trigger span {
-  display: inline-block;
-  padding: 8px 13px;
-  background-color: #90A3B7;
-  color: white;
-  cursor: pointer;
-  text-transform: uppercase; 
-}
-.nav-trigger span:after {
-  display: inline-block;
-  margin-left: 10px;
-  width: 20px;
-  height: 10px;
-  border-left: solid 10px transparent;
-  border-top: solid 10px #fff;
-  border-right: solid 10px transparent; 
-}
-.nav-trigger span:hover {
-  background-color: #90A3B7 
-}
-.nav-trigger span.open:after {
-  border-left: solid 10px transparent;
-  border-top: none;
-  border-bottom: solid 10px #fff;
-  border-right: solid 10px transparent; 
-}
-.nav-mobile {
-  position: relative;
-  display: none; 
-}
-.nav-mobile ul {
-  display: none;
-  list-style-type: none;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  background-color: #90A3B7 
-}
-.nav-mobile li {
-  display: block;
-  z-index: 9999;
-  padding: 5px 0;
-  margin: 0 5px;
-  border-bottom: solid 1px #D7D7D7; 
-}
-.nav-mobile li:last-child {
-  border-bottom: none; 
-  padding: 10px 5px;
-}
-.nav-mobile a {
-  display: block;
-  color: white;
-  padding: 10px 30px; 
-}
-.nav-mobile a:hover {
-  background-color: #90A3B7;
-  color: #fff; 
-}
-ul.expanded {
-  z-index: 9999;
+
+  li {
+    list-style: none;
+  }
 }
 
-.row.twelve.columns.headerImage {
-  background-image:url("header.png");
-  height: 439px;
+li {
+   display: inline;
+}
+a{
+  text-decoration: none;
+  color: $thirdColor;
+}
+a:hover{
+  color: $greenHover;
+}
+ul {
+  margin-bottom: 0;
+}
+
+.fa {
+  color: $thirdColor
+}
+
+.fa:hover {
+  color: #49807d;
+}
+
+hr {
   width: 100%;
-  background: cover;
-}
-/*
-
-.welcome {
-	background: url(wendiMain.jpg) no-repeat right center; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-      height: 800px;
-    margin-top: 50px;
-}*/
-
-
-p.six.columns.wendiBio {
-    max-width: 50%;
-    padding: 10% 0 0 3%;
+  color: $thirdColor;
 }
 
-/** posts **/
 
-img {
-	max-width: 100%;
+.clear {
+    clear:both;
 }
-.news-container, .mainGallery {
-	max-width: 1280px;
+
+.headerBorder {
+    border-bottom: 1px solid $thirdColor;
+    width: 32%;
     margin: 0 auto;
-    overflow: hidden;
+}
+
+
+.bannerImageMain {
+  height: 400px;
+  background-color: $mainColor;
+  background-position: center center;
+  background-repeat: no-repeat;
+  margin-bottom: 25px;
+}
+
+.blur {
+  opacity:0.8;
+  -webkit-filter: blur(3px);
+  -moz-filter: blur(3px);
+  -o-filter: blur(3px);
+  -ms-filter: blur(3px);
+  filter: blur(3px);
+}
+
+/** div.fadeMe {
+  opacity:    0.5; 
+  background: #000; 
+  width:      100%;
+  height:     100%; 
+  z-index:    10;
+  top:        0; 
+  left:       0; 
+  position:   fixed; 
+} **/
+
+div#text {
+    margin: 10px 0px;
+    border: 3px solid;
+    padding: 20px 0px;
+    text-align: center;
+    h2{
+      font-family: $extrasFont;
+      color: $thirdColor;
+    }
+}
+.row.three.columns.sidebar {
+    text-align: center;
+    padding: 20px;
+    h2 {
+      text-align: center;
+      font-weight: bold;
+    }
+    .widget {
+      border: 1px solid $fourthColor;
+      padding: 30px 10px;
+      margin-bottom: 20px;
+    }
+    p {
+      font-family: $paragraphFont;
+    }
+}
+
+.instagramWendi{
+  border: 1px solid $fourthColor;
+  padding: 30px 10px;
+    margin-bottom: 20px;
+    height: 150px;
+    .newImages{
+      width: 90%;
+      margin: 0 auto;
+    }
+    img {
+      width: 33%;
+      height: auto;
+      float: left;
+    }
+    li img {
+      width: 20%;
+      height: auto;
+    }
+}
+
+.post-wrapper:first-child {
+  width: 90%;
+  .postImage {
+    width: 100%;
+  }
 }
 
 .post-wrapper {
-	background-color: white;
+  text-align: center;
+  font-family: $paragraphFont;
+  margin: 20px;
+  @media screen and (min-width:800px){
+    width: 45%;
     float: left;
-    margin-top: 16px;
-    width: 320px;
-    -webkit-transition: opacity 0.5s;
-    transition: opacity 0.5s;
-}
+  }
+  
+  h1 {
+    margin: 0px;
+    font-family: $headerFont;
+    text-transform: uppercase;
+    font-size: 2em;
+    color: $thirdColor;
+  }
+  a {
+    text-decoration: none;
+    color: $thirdColor !important;
+  }
+  .postInfo {
+    padding: 0 10px;
+    font-family: $extrasFont;
+    font-weight: bold;
+    margin-bottom: 10px;
+    .before{
+      border-bottom: 3px solid $thirdColor;
+      width: 10px;
+      height: 10px;
+    }
+  }
 
-
-dl.gallery-item {
+  img.alignnone {
     max-width: 100%;
-    float: left;
+    height: auto;
+  }
 }
+
+.postDate {
+  font-family: $paragraphFont;
+}
+  .postDate span {
+    display: inline-block;
+    position: relative;  
+  }
+  .postDate span:before,
+  .postDate span:after {
+    content: "";
+    position: absolute;
+    height: 11px;
+    border-bottom: 1px solid $thirdColor;
+    top: 0;
+    width: 45%;
+  }
+  .postDate span:before {
+    right: 100%;
+    margin-right: 15px;
+  }
+  .postDate span:after {
+    left: 100%;
+    margin-left: 15px;
+  } 
+
+.single-post-wrapper {
+  text-align: center;
+  font-family: $paragraphFont;
+  margin: 20px;
+  h1 {
+    margin: 0px;
+    font-family: $headerFont;
+    text-transform: uppercase;
+    font-size: 2em;
+  }
+  a {
+    text-decoration: none;
+    color: $mainColor !important;
+  }
+  .postInfo {
+    padding: 0 10px;
+    font-family: $extrasFont;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  img.alignnone {
+    max-width: 100%;
+    height: auto;
+  }
+  .postInfo {
+    background: $mainColor;
+    width: 100%;
+  }
+}
+
+.row.relatedposts {
+  text-align: center;
+   h2 {
+      margin-bottom: 0px;
+    }
+}
+
+.relatedPost {
+   width: 25%;
+    float: left;
+    padding: 10px;
+    h3 {
+      font-size: 2rem;
+      margin-bottom: 0px;
+    }
+
+}
+
+div#related_posts {
+    margin: 0 auto;
+    width: 90%;
+}
+
+span.full-width {
+  width: 90%;
+  text-align: center;
+}
+
+span.text-half{
+  width: 40%;
+  float: left;
+  
+}
+
+.bioContainer {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.gallerySection {
+  margin-top: 20px !important;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  div#gallery-1 {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+}
+
+
+.row.twelve.columns.footerLink {
+    padding: 20px;
+    background: $mainColor;
+    font-family: $subheaderFont;
+    height: 100px;
+    margin-top:-9px;
+    color: #9E9898;
+    p{
+      float: left;
+      margin: 10px 0 0 0;
+    }
+    ul.footerLinks {
+      float: right;
+      margin: 10px 0 0 0;
+      li {
+        padding: 0 3px;
+      }
+      a{
+        color: #9E9898;
+      }
+    }
+}
+.footerText{
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 20px;
+}
+
+p.copyright {
+  font-family: $paragraphFont;
+  font-size: 1.2rem;
+    text-transform: uppercase;
+    margin: 0px;
+    text-align: left;
+}
+
+.post_info_date:before {
+  content: "";
+    border-bottom: 3px solid #be9656;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    z-index: 0;
+}
+
+.in-grid-4.square-image {
+  .lightwidget.square-image .in-image {
+
+  }
+}
+
+#instafeed img {
+  width: 10% !important;
+  @media screen and (max-width: 800px){
+    width: 20% !important;
+    margin-top: -9px;
+  }
+
+}
+
+.instagramDesktop {
+  i.fa.fa-instagram.black {
+    color: black;
+  }
+  text-align: center;
+  h2 {
+    font-family: $subheaderFont;
+  }
+}
+
+.instagramDesktop span {
+  display: inline-block;
+  position: relative;  
+}
+.instagramDesktop span:before,
+.instagramDesktop span:after {
+  content: "";
+  position: absolute;
+  height: 11px;
+  border-bottom: 1px solid $thirdColor;
+  top: 0;
+  width: 20%;
+}
+.instagramDesktop span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+.instagramDesktop span:after {
+  left: 100%;
+  margin-left: 15px;
+} 
+
+
+.mainNav {
+  @media screen and (max-width: 850px) {
+    display: none;
+  }
+}
+
+/**.nav-mobile li{
+  display: block;
+    background: $mainColor;
+    color: white;
+} **/
+
+div#text-3 a {
+  padding: 0 8px;
+}
+
+//back to the top
+a.back-to-top {
+  width: 60px;
+  height: 60px;
+  text-indent: -9999px;
+  z-index: 999;
+  right: 20px;
+  bottom: 20px;
+  background: white ;
+  padding: 8px;
+}
+
+
+

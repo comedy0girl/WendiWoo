@@ -1,5 +1,6 @@
 @import 'colors.scss';
 @import 'gallery.scss';
+@import 'pages.scss';
 @import 'fonts.scss';
 @import 'nav.scss';
 @import 'video.scss';
@@ -33,7 +34,11 @@ li {
    display: inline;
 }
 a{
-	text-decoration: none;
+  text-decoration: none;
+  color: $thirdColor;
+}
+a:hover{
+  color: $greenHover;
 }
 ul {
 	margin-bottom: 0;
@@ -84,17 +89,6 @@ img {
   -ms-filter: blur(3px);
   filter: blur(3px);
 }
-
-/** div.fadeMe {
-  opacity:    0.5; 
-  background: #000; 
-  width:      100%;
-  height:     100%; 
-  z-index:    10;
-  top:        0; 
-  left:       0; 
-  position:   fixed; 
-} **/
 
 div#text {
     margin: 10px 0px;
@@ -239,7 +233,6 @@ div#text {
 		height: auto;
 	}
 	.postInfo {
-		background: $mainColor;
 		width: 100%;
 	}
 }
@@ -342,65 +335,11 @@ p.copyright {
     z-index: 0;
 }
 
-.in-grid-4.square-image {
-	.lightwidget.square-image .in-image {
-
-	}
-}
-
-#instafeed img {
-	width: 10% !important;
-	@media screen and (max-width: 800px){
-		width: 20% !important;
-		margin-top: -9px;
-	}
-
-}
-
-.instagramDesktop {
-	i.fa.fa-instagram.black {
-		color: black;
-	}
-	text-align: center;
-	h2 {
-		font-family: $subheaderFont;
-	}
-}
-
-.instagramDesktop span {
-  display: inline-block;
-  position: relative;  
-}
-.instagramDesktop span:before,
-.instagramDesktop span:after {
-  content: "";
-  position: absolute;
-  height: 11px;
-  border-bottom: 1px solid $thirdColor;
-  top: 0;
-  width: 20%;
-}
-.instagramDesktop span:before {
-  right: 100%;
-  margin-right: 15px;
-}
-.instagramDesktop span:after {
-  left: 100%;
-  margin-left: 15px;
-}	
-
-
 .mainNav {
 	@media screen and (max-width: 850px) {
 		display: none;
 	}
 }
-
-/**.nav-mobile li{
-	display: block;
-		background: $mainColor;
-		color: white;
-} **/
 
 div#text-3 a {
 	padding: 0 8px;
@@ -415,6 +354,7 @@ a.back-to-top {
 	z-index: 999;
 	right: 20px;
 	bottom: 20px;
+	background: $thirdColor ;
 	padding: 8px;
 	a {
 		color: white !important;

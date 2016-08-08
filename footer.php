@@ -1,6 +1,6 @@
 <div class="clear"></div>
 <div class="row twelve columns instagramDesktop">
-  <h2> <span><i class="fa fa-instagram black"></i>  @wendi_mclendon_covey</span></h2>
+  <h2> <span><i class="fa fa-instagram black"></i>  @wendimc_fansite</span></h2>
   <div class="row twelve columns" id="instafeed"></div>
 </div>
 
@@ -8,7 +8,7 @@
 
 	<div class="row twelve columns footerLink">
   <hr/>
-      <p>© Copyright @wendifanste</p>
+      <p>© Copyright <a href="https://twitter.com/wendifansite">@wendifanste</a></p>
       <ul class="footerLinks">
         <li><a href="/">Home</a></li>
         <li><a href="/biography/">Wendi</a></li>
