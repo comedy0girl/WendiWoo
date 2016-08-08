@@ -57,6 +57,10 @@ hr {
     clear:both;
 }
 
+img {
+	max-width: 100%;
+}
+
 .headerBorder {
     border-bottom: 1px solid $thirdColor;
     width: 32%;
@@ -298,7 +302,7 @@ span.text-half{
     font-family: $subheaderFont;
     height: 100px;
     margin-top:-9px;
-    color: #9E9898;
+    color: white;
    	p{
    		float: left;
    		margin: 10px 0 0 0;
@@ -310,7 +314,7 @@ span.text-half{
    			padding: 0 3px;
    		}
    		a{
-   			color: #9E9898;
+   			color: white;
    		}
    	}
 }
@@ -404,14 +408,17 @@ div#text-3 a {
 
 //back to the top
 a.back-to-top {
+	background-color: $thirdColor;
 	width: 60px;
 	height: 60px;
 	text-indent: -9999px;
 	z-index: 999;
 	right: 20px;
 	bottom: 20px;
-	background: white ;
 	padding: 8px;
+	a {
+		color: white !important;
+	}
 }
 
 
