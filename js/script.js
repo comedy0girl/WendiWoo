@@ -24,19 +24,10 @@ $(document).ready(function(){
     }, 700);
     return false;
 });
-
-    var feed = new Instafeed({
-        get: 'user',
-        userId: '1561907447',
-        limit: 10,
-        sortBy: 'most-recent',
-        clientId: '3bfba065cf224b38b146d6b02db4b9f5'
-    });
-    feed.run();
     
 
     $(window).scroll(function(){
-        if ($(window).scrollTop() >= 130) {
+        if ($(window).scrollTop() >= 110) {
             $('.nav-bar').addClass('fixed');
         }
         else {
@@ -45,7 +36,7 @@ $(document).ready(function(){
     });
 
      $(window).scroll(function(){
-        if ($(window).scrollTop() >= 130) {
+        if ($(window).scrollTop() >= 110) {
             $('.bannerImage, .bannerImageMain').addClass('blur');
         }
         else {

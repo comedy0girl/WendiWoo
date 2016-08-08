@@ -4,19 +4,17 @@
 			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 				<div class="single-post-wrapper">
 					<h1><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h1>
+					
 					<div class="postInfo">
-						<div class="cal-date">
-							<span class="cal-month"><?php the_time('F') ?></span>
-							<span class="cal-day"><?php the_time('j') ?></span>
-							<span class="cal-year"><?php the_time('Y')?></span>
-						</div><!-- date -->
-						<?php	$categories = get_the_category();
+						<div class="postDate">
+							<span><?php the_time('F') ?> <?php the_time('j') ?> <?php the_time('Y')?></span>
+						</div>
+						<span><?php	$categories = get_the_category();
 							if ( ! empty( $categories ) ) {
 							    echo esc_html( $categories[0]->name );   
 							} 
-						?>
+						?></span>
 					</div>
-
 					<div class="postImage">
 						<?php
 						if (! $featured = get_the_post_thumbnail()) {
