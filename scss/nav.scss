@@ -169,20 +169,19 @@ ul#mobile_main_menu {
 
 
 #overlay{ /* we set all of the properties for are overlay */
-
-    position: absolute;
-    top:50%;
-    left: 50%;
-    z-index: 1000;
-
     height:5%;
     width:50%;
-
+    margin:0 auto;
     background:white;
     border: 1px solid $thirdColor;
     color:black;
     padding:10px;
-    
+    position:absolute;
+    top:30%;
+    left:25%;
+    right: 25%;
+    z-index:1000;
+    display:none;
 }
 
 #mask{ /* create are mask */
