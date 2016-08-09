@@ -44,6 +44,14 @@ $(document).ready(function(){
         }
     });
 
+
+     //centering overlay in screen even if resized
+     var overlay = $("#overlay"),
+    top = $(window).scrollTop() - (overlay.outerHeight() / 2),
+    left = -(overlay.outerWidth() / 2);
+
+overlay.css({'margin-top': top,'margin-left': left});
+
  
     //wrap all iframe videos in class to make responsive
     $('iframe').wrap("<div class='videowrapper'></div>");

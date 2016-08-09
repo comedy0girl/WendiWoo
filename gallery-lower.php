@@ -15,14 +15,14 @@
 			?>
 		</div>
 		<div class="row twelve columns galleryContent">
-			<div class="galleryContainer">
+			<div class="galleryBox">
 				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 				<?php the_content(); ?>
 				
 				<?php endwhile; else: ?>
 				<?php _e('Sorry, we couldn’t find the post you are looking for.'); ?>
 				<?php endif; ?>	
-			</div>	
+			</div>
 		</div>
 	</div><!-- gallery container -->
 

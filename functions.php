@@ -29,8 +29,6 @@ if ( function_exists('register_sidebar') ) {
 
 }
 
-
-
 // Facebook Open Graph
 add_action('wp_head', 'add_fb_open_graph_tags');
 function add_fb_open_graph_tags() {

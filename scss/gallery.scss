@@ -1,3 +1,7 @@
+.gallery.bannerImage {
+    margin-bottom: 2em;
+}
+
 .gallery br {
     display: none;
     margin: 0px;
@@ -7,19 +11,23 @@ dl.gallery-item {
 	float: left;
 	margin: 0px;
     opacity: 0.5;
+    &:hover{
+        opacity: 1;
+    }
 }
 
 .galleryContent {
-	text-align: center;
+	display: table;
     margin: 0 auto;
-    display: table;
-    margin-bottom: 20px;
 }
 
-.galleryContainer {
+.galleryBox {
     width: 95%;
     margin: 0 auto;
+
 }
+
+
 
 img {
     max-width: 100%;

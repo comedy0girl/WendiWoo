@@ -29,11 +29,11 @@
 			</div><!-- logowrapper -->
 
 			<div id="overlay">
-							<p>Share us on Facebook and Twitter</p>
-							<li>Facebook</li>
-							<li>Twitter</li>
-						</div>
-						<div id="mask" class="mask" onclick="document.location=' ';"></div>
+				<h2>Share us on Facebook and Twitter</h2>
+				<li><a href="https://www.facebook.com/sharer/sharer.php?u=wendimcfansite.com">Share on Facebook</a></li>
+				<li><a href="https://twitter.com/home?status=wendimcfansite.com%20%7C%20Wendi%20McLendon-Covey%20Fansite">Share on Twitter</a></li>
+			</div>
+			<div id="mask" class="mask" onclick="document.location=' ';"></div>
 			
 			
 			<div id="menuWrapper">

@@ -7,8 +7,4 @@
 		<li><a href="/audio/">The Groundlings</a></li>
 		<li><a href="/fan-downloads/">Public Appearances</a></li>
 	</ul>
-	<div class="nav-trigger">
-		<span><i class="fa fa-bars"></i></span>
-	</div><!--- trigger -->
-	<nav class="nav-mobile"></nav>
 </div><!-- 12 columns -->
