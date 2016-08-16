@@ -79,6 +79,10 @@ img {
 	background-position: center center;
 	background-repeat: no-repeat;
 	margin-bottom: 25px;
+	 -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .blur {

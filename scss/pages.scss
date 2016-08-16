@@ -1,3 +1,49 @@
 .row.nine.columns.articles {
 	padding: 0 20px;
 }
+
+.moreArticles {
+	border: 1px solid $fourthColor;
+	padding: 10px;
+	text-align: center;
+	li {
+	display: inline-block;
+	}
+
+}
+	
+
+// #card {
+//   width: 100%;
+//   height: 100%;
+//   position: absolute;
+//   transform-style: preserve-3d;
+//   transition: transform 1s;
+// }
+
+// #card figure {
+//   margin: 0;
+//   display: block;
+//   position: absolute;
+//   width: 100%;
+//   height: 100%;
+//   backface-visibility: hidden;
+// }
+
+// #card .front {
+//   background: red;
+// }
+// #card .back {
+//   background: blue;
+//   transform: rotateY( 180deg );
+// }
+
+// #card.flipped {
+//   transform: rotateY( 180deg );
+// }
+
+// #card { transform-origin: right center; }
+
+// #card.flipped {
+//   transform: translateX( -100% ) rotateY( -180deg );
+// }

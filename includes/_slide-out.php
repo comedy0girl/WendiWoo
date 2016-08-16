@@ -3,17 +3,36 @@
 		<a id="close_mobile_menu" href="javascript:;"><i class="fa fa-close"></i></a>
 		
     	    	
-	    <div class="menu-side-mobile-menu-container">
+	    <div class="menu-side-mobile-menu-container" id="card">
+	     <figure class="front">
 	    	<ul id="mobile_main_menu" class="mobile_main_nav">
 	    		<li><a href="/">Home</a></li>
 				<li><a href="/biography/">Wendi</a></li>
-				<li><a href="/gallery-2/">Gallery</a></li>
+				<li><a id="flip">Gallery</a></li>
 				<li><a href="/articlesmain/">Press</a></li>
 				<li><a href="/audio/">Audio</a></li>
 				<li><a href="/fan-downloads/">Downloads</a></li>
 				<li><a href="http://www.podcastgarden.com/podcast/goldnerds">The Goldnerds Podcast</a></li>
 				<li><a href="/contact/">Website Info</a></li> 
 		    </ul>
+		    </figure>
+
+		    <figure class="back">
+			    <ul>
+			    	<li><a href="/">TV Shows</a></li>
+				<li><a href="/biography/">Films</a></li>
+				<li><a href="/gallery-2/">Appearances</a></li>
+				<li><a href="/articlesmain/">Guest Appearances</a></li>
+				<li><a href="/audio/">Commercials</a></li>
+				<li><a href="/fan-downloads/">Downloads</a></li>
+				<li><a href="http://www.podcastgarden.com/podcast/goldnerds">The Goldnerds Podcast</a></li>
+				<li><a href="/contact/">Website Info</a></li> 
+			    	
+			    </ul>
+
+		    </figure>
+
+		  
 
 
 		    <div id="text-2" class="widget widget_text"><h2>About Wendi</h2>			
@@ -37,3 +56,7 @@
   js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6&appId=944177398972720";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
+
+<script>
+
+</script>
