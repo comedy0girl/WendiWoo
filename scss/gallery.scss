@@ -21,9 +21,12 @@ dl.gallery-item {
     margin: 0 auto;
 }
 
-.galleryBox {
-    width: 95%;
+.galleryContainer {
+    width: 93%;
     margin: 0 auto;
+    @media screen and (max-width: 400px){
+        width: 88%;
+    }
 
 }
 
@@ -35,7 +38,3 @@ img {
 }
 
 
-attachment-main-gallery-size size-main-gallery-size {
-    width: 200px;
-    height: 200px;
-}

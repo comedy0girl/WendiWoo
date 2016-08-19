@@ -15,7 +15,7 @@
 			?>
 		</div>
 		<div class="row twelve columns galleryContent">
-			<div class="galleryBox">
+			<div class="galleryContainer">
 				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 				<?php the_content(); ?>
 				

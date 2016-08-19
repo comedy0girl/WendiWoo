@@ -121,24 +121,14 @@ div#text {
     }
 }
 
-.instagramWendi{
-	border: 1px solid $fourthColor;
-	padding: 30px 10px;
-    margin-bottom: 20px;
-    height: 150px;
-    .newImages{
-    	width: 90%;
-    	margin: 0 auto;
-    }
-    img {
-    	width: 33%;
-    	height: auto;
-    	float: left;
-    }
-    li img {
-    	width: 20%;
-    	height: auto;
-    }
+.twitterSidebar {
+	@media screen and (max-width: 650px) {
+		display: none;
+	}
+}
+
+.instagramDesktop {
+	text-align: center;
 }
 
 .post-wrapper:first-child {

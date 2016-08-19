@@ -100,7 +100,7 @@ add_filter('image_send_to_editor','give_linked_images_class',10,8);
 add_theme_support('post-thumbnails');
 
 if ( function_exists( 'add_image_size' ) ) {
-add_image_size( 'main-gallery-size', 200, 200, array('center', 'center') ); //(cropped)
+add_image_size( 'main-gallery-size', 175, 175, array('center', 'center') ); //(cropped)
 add_image_size( 'lower-gallery-size', 150, 150, array('center', 'center') ); //(cropped)
 }
 
