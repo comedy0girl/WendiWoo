@@ -2,6 +2,10 @@
 
 <div class="row twelve columns container">
 
+	<div id="menuWrapper">
+		<?php include (TEMPLATEPATH . '/includes/_nav.php'); ?>
+	</div><!-- menuWrapper -->
+
   	<header>
   		<div class="topBar">
   			<div class="row twelve columns logoWrapper">
@@ -14,7 +18,7 @@
 		  		</div>
 		
 		        <div class="logo header-center">
-				   <h1>Wendi MC Fansite</h1>
+				    <h1><a href="/">Wendi MC Fansite</a></h1>
 				   <h2>Your fansite source for Wendi McLendon-Covey</h2>
 				</div>
 
@@ -36,11 +40,16 @@
 				<li><a href="https://twitter.com/home?status=wendimcfansite.com%20%7C%20Wendi%20McLendon-Covey%20Fansite">Share on Twitter</a></li>
 			</div>
 			<div id="mask" class="mask" onclick="document.location=' ';"></div>
-			
-			
-			<div id="menuWrapper">
-				<?php include (TEMPLATEPATH . '/includes/_nav.php'); ?>
-			</div><!-- menuWrapper -->
+
+			<div class="smallScreenNav">
+				<ul>
+					<li><a href="https://twitter.com/wendifansite"><i class="fa fa-twitter "></i></a></li>
+					<li><a href="http://instagram.com/wendimc_fansite/"><i class="fa fa-instagram "></i></a></li>
+					<li><a href="https://www.facebook.com/wendimclendoncoveyfan"><i class="fa fa-facebook"></i></a></li>
+					<li id="clickme"><i class="fa fa-search" aria-hidden="true"></i></li>
+						<li id="clickme" ><i class="fa fa-bars" aria-hidden="true"></i></li>
+				</ul>
+			</div>
 		</div><!-- topbar -->
 	</header>
 

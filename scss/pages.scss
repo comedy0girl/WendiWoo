@@ -47,3 +47,14 @@
 // #card.flipped {
 //   transform: translateX( -100% ) rotateY( -180deg );
 // }
+
+
+.wendiInfo, .siteInfo{
+	border: 1px solid $fourthColor;
+    	padding: 30px 5px;
+    	margin-bottom: 20px;
+}
+
+.sideOptions {
+    margin-bottom: 20px;
+}

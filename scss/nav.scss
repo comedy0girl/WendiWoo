@@ -56,9 +56,36 @@
   li {
     padding: 5px;
   }
+
+}
+
+@media screen and (max-width: 675px) {
+  .socialWrapper, .shareWrapper {
+      display: none;
+  }
+  .logo.header-center {
+      width: 100%;
+      padding: 5px 0px;
+  }
+}
+
+@media screen and (max-width: 675px) {
+    .logo.header-center h1 {
+        font-size: 2em;
+    }
+    .logo.header-center h2 {
+        font-size: 0.7em;
+    }
+
 }
 
 
+.smallScreenNav {
+  text-align: center;
+  li {
+      padding: 0px 5px;
+  }
+}
 
 
 .navBySeason, .nav-bar {

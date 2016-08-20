@@ -2,6 +2,10 @@
 
 <div class="row twelve columns container">
 
+	<div id="menuWrapper">
+			<?php include (TEMPLATEPATH . '/includes/_gallery-nav.php'); ?>
+	</div><!-- menuWrapper -->
+
   	<header>
   		<div class="topBar">
   			<div class="row twelve columns logoWrapper">
@@ -28,15 +32,25 @@
 
 			</div><!-- logowrapper -->
 
-			<div id="overlay">
+
+			<!-- overlay that needs to be added in later -->
+			<!-- <div id="overlay">
 				<p>Share us on Facebook and Twitter</p>
 				<li>Facebook</li>
 				<li>Twitter</li>
-			</div>
+			</div> -->
 			<div id="mask" class="mask" onclick="document.location=' ';"></div>
-			<div id="menuWrapper">
-				<?php include (TEMPLATEPATH . '/includes/_gallery-nav.php'); ?>
-			</div><!-- menuWrapper -->
+			
+
+			<div class="smallScreenNav">
+				<ul>
+					<li><a href="https://twitter.com/wendifansite"><i class="fa fa-twitter "></i></a></li>
+					<li><a href="http://instagram.com/wendimc_fansite/"><i class="fa fa-instagram "></i></a></li>
+					<li><a href="https://www.facebook.com/wendimclendoncoveyfan"><i class="fa fa-facebook"></i></a></li>
+					<li id="clickme"><i class="fa fa-search" aria-hidden="true"></i></li>
+						<li id="clickme" ><i class="fa fa-bars" aria-hidden="true"></i></li>
+				</ul>
+			</div>
 		</div><!-- topbar -->
 	</header>
 

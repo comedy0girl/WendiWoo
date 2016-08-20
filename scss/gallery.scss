@@ -11,8 +11,7 @@ dl.gallery-item {
 	float: left;
 	margin: 0px;
     padding: 0;
-    height: 175px;
-    width: 175px;
+ 
     margin: 2px;
   
 }
@@ -40,8 +39,7 @@ dl.gallery-item {
     position: relative;
 }
 dt.gallery-icon.landscape {
-    height: 175px;
-    width: 175px;
+    
     border: 1px solid white;
     opacity: 0.5;
      &:hover {

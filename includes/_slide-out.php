@@ -11,14 +11,16 @@
 	    <div class="menu-side-mobile-menu-container">
 
 	    <div class="card effect__click">
+	    	<div class="searchForm"><?php echo do_shortcode('[wpdreams_ajaxsearchlite]'); ?></div>
 		     <div class="card__front">
 		    	<ul id="mobile_main_menu" class="mobile_main_nav">
 		    		<li><a href="/">Home</a></li>
 					<li><a href="/biography/">Wendi</a></li>
 					<li><a id="card">Gallery</a></li>
 					<li><a href="/articlesmain/">Press</a></li>
-					<li><a href="/audio/">Audio</a></li>
-					<li><a href="/fan-downloads/">Downloads</a></li>
+					<li><a href="/goldbergs-upcoming-episodes/">Goldbergs News</a></li>
+				<!-- 	<li><a href="/audio/">Audio</a></li>
+					<li><a href="/fan-downloads/">Downloads</a></li> -->
 					<li><a href="http://www.podcastgarden.com/podcast/goldnerds">The Goldnerds Podcast</a></li>
 					<li><a href="/contact/">Website Info</a></li> 
 			    </ul>

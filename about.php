@@ -1,10 +1,10 @@
-<?php /*Template Name: About Wendi*/ ?>
+<?php /*Template Name: biography page*/ ?>
 
 <?php get_header('general'); ?>
 
 	<div class="bio-container twelve columns">
 			
-		<div class="row twelve columns bio-post">
+		<div class="row nine columns bio-post">
 			<div class="bioContainer">
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 				
@@ -15,6 +15,10 @@
 			<?php endif; ?>
 			</div>
 		</div><!-- content post -->
+
+		<div class="row three columns sidebar">
+			<?php get_sidebar('biog'); ?>
+		</div> 
 
 	</div><!-- about container -->
 	
