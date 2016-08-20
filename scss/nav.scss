@@ -73,14 +73,14 @@
     color: black;
     text-decoration: none;
     font-family: $subheaderFont;
-    padding: 0 10px;
+    padding: 4px 10px;
     letter-spacing: 0.1rem;
     text-transform: uppercase;
   }
   a:hover{
     color: white;
     background: $mainColor;
-    padding-bottom: 4px;
+    padding: 4px 10px;
   }
   a:active{
     color: $mainColor;

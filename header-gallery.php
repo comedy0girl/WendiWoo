@@ -20,7 +20,7 @@
 
 				<div class="shareWrapper">
 					<ul>
-						<a href="#overlay" id="open-overlay"><li id="shareMe"><i class="fa fa-share-alt" aria-hidden="true"></i></li></a>
+						<!-- <a href="#overlay" id="open-overlay"><li id="shareMe"><i class="fa fa-share-alt" aria-hidden="true"></i></li></a> -->
 						<li id="clickme"><i class="fa fa-search" aria-hidden="true"></i></li>
 						<li id="clickme" ><i class="fa fa-bars" aria-hidden="true"></i></li>
 					</ul>

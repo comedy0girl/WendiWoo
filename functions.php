@@ -65,7 +65,7 @@ function my_excerpt($text, $excerpt){
     $text = apply_filters('the_content', $text);
     $text = str_replace(']]>', ']]>', $text);
     $text = strip_tags($text);
-    $excerpt_length = apply_filters('excerpt_length', 55);
+    $excerpt_length = apply_filters('excerpt_length', 200);
     $excerpt_more = apply_filters('excerpt_more', ' ' . '[...]');
     $words = preg_split("/[\n
    ]+/", $text, $excerpt_length + 1, PREG_SPLIT_NO_EMPTY);
@@ -105,11 +105,13 @@ add_image_size( 'lower-gallery-size', 150, 150, array('center', 'center') ); //(
 }
 
 
+
 add_filter( 'image_size_names_choose', 'my_custom_sizes' );
 function my_custom_sizes( $sizes ) {
 return array_merge( $sizes, array(
 'main-gallery-size' => __( 'Main Gallery Thumb' ),
 'lower-gallery-size' => __( 'Lower Gallery Thumb' ),
+
 ) );
 }
 //deactivate WordPress function
