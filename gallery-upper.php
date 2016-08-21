@@ -2,6 +2,10 @@
 
 <?php get_header('gallery'); ?>
 
+	<div id="menuWrapper">
+			<?php include (TEMPLATEPATH . '/includes/_gallery-nav.php'); ?>
+	</div><!-- menuWrapper -->
+
 	<div class="row twelve columns gallery">
 		<div class="row twelve columns galleryContent">
 			<div class="galleryContainer">

@@ -3,9 +3,8 @@
 <div class="row twelve columns container">
 
 	<div id="menuWrapper">
-			<?php include (TEMPLATEPATH . '/includes/_gallery-nav.php'); ?>
+		<?php include (TEMPLATEPATH . '/includes/_nav.php'); ?>
 	</div><!-- menuWrapper -->
-
   	<header>
   		<div class="topBar">
   			<div class="row twelve columns logoWrapper">
@@ -59,3 +58,5 @@
 	$src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( 5600,1000 ), false, '' );
 	?>
 	<div class="row twelve columns gallery bannerImage" style="background: url(<?php echo $src[0]; ?> ); background-position:center center; height: 400px;"></div>
+	
+

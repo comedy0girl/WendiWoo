@@ -1,6 +1,4 @@
-.gallery.bannerImage {
-    margin-bottom: 2em;
-}
+
 
 .gallery br {
     display: none;
@@ -11,24 +9,23 @@ dl.gallery-item {
 	float: left;
 	margin: 0px;
     padding: 0;
- 
-    margin: 2px;
-  
 }
 
 .galleryContent { 
-	display: table;
-    margin: 0 auto;
+	height: 100%;
+    display: table-cell;   
+    vertical-align: middle; 
+    margin: 20px 0;   
 }
+
 
 .galleryContainer {
-    width: 93%;
-    margin: 0 auto;
-    @media screen and (max-width: 400px){
-        width: 88%;
-    }
-
+    width: 94%;
+    position: relative;
+    margin: 0 0 0 -47%;
+    left: 50%;
 }
+
 
 
 .gallery-caption{
@@ -38,21 +35,17 @@ dl.gallery-item {
     background-color: $thirdColor;
     position: relative;
 }
-dt.gallery-icon.landscape {
-    
+dt.gallery-icon.landscape, dt.gallery-icon.portrait {
+    height: 175px;
+    width: 175px;
     border: 1px solid white;
     opacity: 0.5;
+    margin-bottom: 5px;
      &:hover {
         opacity: 1;
     }
 }
 
-dt.gallery-icon.portrait {
-    opacity: 0.5;
-     &:hover {
-        opacity: 1;
-    }
-}
 
 img {
     max-width: 100%;

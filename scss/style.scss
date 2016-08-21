@@ -302,6 +302,12 @@ span.text-half{
    		a{
    			color: white;
    		}
+   		@media screen and (max-width: 500px){
+			font-size: 0.8em;
+		}
+		@media screen and (max-width: 380px){
+			font-size: 0.6em;
+		}
    	}
 }
 .footerText{
@@ -328,11 +334,7 @@ p.copyright {
     z-index: 0;
 }
 
-.mainNav {
-	@media screen and (max-width: 850px) {
-		display: none;
-	}
-}
+
 
 div#text-3 a {
 	padding: 0 8px;

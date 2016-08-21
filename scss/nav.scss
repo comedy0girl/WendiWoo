@@ -58,8 +58,13 @@
   }
 
 }
+.mainNav {
+  @media screen and (max-width: 755px) {
+    display: none;
+  }
+}
 
-@media screen and (max-width: 675px) {
+@media screen and (max-width: 755px) {
   .socialWrapper, .shareWrapper {
       display: none;
   }
@@ -69,14 +74,13 @@
   }
 }
 
-@media screen and (max-width: 675px) {
+@media screen and (max-width: 755px) {
     .logo.header-center h1 {
         font-size: 2em;
     }
     .logo.header-center h2 {
         font-size: 0.7em;
     }
-
 }
 
 
@@ -85,10 +89,13 @@
   li {
       padding: 0px 5px;
   }
+  @media screen and (min-width: 675px){
+      display: none;
+  }
 }
 
 
-.navBySeason, .nav-bar {
+.navBySeason, .nav-bar, .gallery-bar {
   ul {
     text-align: center;
   }
@@ -115,6 +122,19 @@
 
 }
 
+.gallery-bar {
+  margin-bottom: 1em;
+  @media screen and (max-width: 450px){
+      a {
+          font-size: 0.8em;
+          padding: 4px;
+          &:hover {
+            padding: 4px;
+          }
+      }
+  }
+}
+
 
 
 .nav-bar{
@@ -135,11 +155,7 @@
   }
 }
 
-ul.mainNav {
-  @media screen and (max-width: 750px) {
-    display: none;
-  }
-}
+
 
 
 .mobile_menu_wrapper {
