@@ -1,13 +1,18 @@
-.row.nine.columns.articles {
-	padding: 0 20px;
+.row.twelve.columns.articles {
+	padding: 20px;
+	h5 {
+		font-size: 1.5em;
+		color: $thirdColor;
+	}
 }
 
 .moreArticles {
 	border: 1px solid $fourthColor;
 	padding: 10px;
 	text-align: center;
+	margin: 25px 0;
 	li {
-	display: inline-block;
+	padding: 0 10px;
 	}
 
 }
@@ -58,3 +63,4 @@
 .sideOptions {
     margin-bottom: 20px;
 }
+

@@ -11,9 +11,9 @@
 					 include (TEMPLATEPATH . '/includes/_goldbergs.php'); 
 				} elseif (is_page('season-1', 'reno2', 'renos3', 'renos4', 'renos5')){
 					include (TEMPLATEPATH . '/includes/_reno.php');
-				} elseif (is_page('talk-shows', 'talk-shows-2')) {
+				} elseif (is_page('talk-shows', 'talk-shows-2', 'talk-shows-3')) {
 					get_sidebar('talkshows');
-				} elseif (is_page('public-appearances')) {
+				} elseif (is_page('public-appearances', 'public-appearances-2', 'public-appearances-3')) {
 					include (TEMPLATEPATH . '/includes/_appearances.php');
 				} 
 				 
@@ -30,13 +30,6 @@
 				
 			</div>
 		</div>
-
-		<div class="row twelve columns moreButtons">
-				<?php if (is_page('public-appearances')) {
-					get_sidebar('appearances');
-				} 
-				?>
-			</div>
 	</div><!-- gallery container -->
 
 <?php get_footer(); ?>

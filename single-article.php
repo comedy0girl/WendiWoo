@@ -15,7 +15,10 @@
 
 			<div class="moreArticles">
 				<h2>More Articles</h2>
-				<?php echo do_shortcode( '[my_childpages]' ); ?>
+
+				<?php include (TEMPLATEPATH . '/includes/_getSiblings.php'); ?>
+
+
 			</div>
 
 		</div><!-- nine columns -->
