@@ -24,10 +24,10 @@ $(document).ready(function(){
 
     $(".gallery-item").hover(
   function () {
-    $(this).addClass("showIt");
+    $(this).find('.gallery-caption').addClass("showIt");
   },
   function () {
-    $(this).removeClass("showIt");
+    $(this).find('.gallery-caption').removeClass("showIt");
   }
 );
 

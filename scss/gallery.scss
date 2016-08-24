@@ -44,14 +44,21 @@ dl.gallery-item {
 .gallery-item {
     z-index: 1;
     position: relative;
+        &:hover {
+            dt.gallery-icon.landscape, dt.gallery-icon.portrait {
+            opacity: 1;
+        }
+    }
 }
 
 .wp-caption-text.gallery-caption {
     visibility: hidden;
-    color: transparent;
+     color: white !important;
     margin:-38px 1px 10px;
-     position: relative;
-      z-index: 9999;
+    text-align: center !important;
+    background-color: $thirdColor;
+    position: relative;
+    z-index: 9999;
 }
 
 .showIt {
@@ -62,6 +69,7 @@ dl.gallery-item {
     background-color: $thirdColor;
     position: relative;
     z-index: 9999;
+
 }
 
 dt.gallery-icon.landscape, dt.gallery-icon.portrait {
@@ -70,10 +78,6 @@ dt.gallery-icon.landscape, dt.gallery-icon.portrait {
     border: 1px solid white;
     opacity: 0.5;
     margin-bottom: 5px;
-     &:hover {
-        opacity: 1;
-        
-    }
 }
 
 
