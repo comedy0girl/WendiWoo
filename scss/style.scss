@@ -19,7 +19,7 @@ body {
 
 	h2, h5 {
 		
-		font-size: 1em;
+		font-size: 0.8em;
 		letter-spacing: 0.1rem;
 		text-transform: uppercase;
 		margin-bottom: 4px;
@@ -173,6 +173,10 @@ div#text {
 		max-width: 100%;
 		height: auto;
 	}
+
+	.blog-post-headline {
+		font-size: 1em;
+	}
 }
 
 .postDate {
@@ -309,6 +313,15 @@ span.text-half{
 			font-size: 0.6em;
 		}
    	}
+}
+
+.copyright {
+	@media screen and (max-width: 500px){
+			font-size: 0.8em;
+		}
+		@media screen and (max-width: 380px){
+			font-size: 0.6em;
+		}
 }
 .footerText{
 	position: absolute;

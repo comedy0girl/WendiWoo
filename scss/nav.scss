@@ -89,7 +89,7 @@
   li {
       padding: 0px 5px;
   }
-  @media screen and (min-width: 675px){
+  @media screen and (min-width: 755px){
       display: none;
   }
 }
@@ -152,6 +152,9 @@
   ul {
   margin-top: 14px;
   border-bottom: 1px solid $mainColor;
+  }
+  @media screen and (max-width: 755px){
+    display: none;
   }
 }
 

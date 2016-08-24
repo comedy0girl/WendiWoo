@@ -35,8 +35,8 @@ if ( function_exists('register_sidebar') ) {
    'after_title' => '</h2>'
    ));  
 
-
 }
+
 
 // Facebook Open Graph
 add_action('wp_head', 'add_fb_open_graph_tags');
@@ -86,14 +86,14 @@ add_theme_support('post-thumbnails');
 
 if ( function_exists( 'add_image_size' ) ) {
 add_image_size( 'main-gallery-size', 175, 175, array('center', 'center') ); //(cropped)
+add_image_size( 'lower-gallery-size', 150, 150, array('center', 'center') ); //(cropped)
 }
-
-
 
 add_filter( 'image_size_names_choose', 'my_custom_sizes' );
 function my_custom_sizes( $sizes ) {
 return array_merge( $sizes, array(
 'main-gallery-size' => __( 'Main Gallery Thumb' ),
+'lower-gallery-size' => __( 'Lower Gallery Thumb' ),
 
 ) );
 }

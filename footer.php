@@ -3,7 +3,6 @@
 
 	<div class="row twelve columns footerLink">
   <hr/>
-      <p>© Copyright <a href="https://twitter.com/wendifansite">@wendifanste</a></p>
       <ul class="footerLinks">
         <li><a href="/">Home</a></li>
         <li><a href="/biography/">Wendi</a></li>
@@ -13,6 +12,8 @@
         <li><a href="/fan-downloads/">Downloads</a></li>
         <li><a href="#" class="back-to-top">TOP</a></li>
       </ul>
+
+        <p class="copyright">© Copyright <a href="https://twitter.com/wendifansite">@wendifanste</a></p>
 	</div>
 
 </footer>

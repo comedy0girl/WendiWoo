@@ -8,6 +8,8 @@ $(document).ready(function(){
             $(".body").addClass("mask");
         }
     });
+   
+
 
     $("#close_mobile_menu").click(function() {
             $(".mobile_menu_wrapper").removeClass("show").fadeIn('slow');      
@@ -18,13 +20,26 @@ $(document).ready(function(){
     });
 
 
+
+
+    $(".gallery-item").hover(
+  function () {
+    $(this).addClass("showIt");
+  },
+  function () {
+    $(this).removeClass("showIt");
+  }
+);
+
+
+
     $('a.back-to-top').click(function() {
     $('html, body').animate({
         scrollTop: 0
     }, 700);
     return false;
 });
-    
+     
 
     $(window).scroll(function(){
         if ($(window).scrollTop() >= 110) {
@@ -56,35 +71,6 @@ $(document).ready(function(){
         $(this).removeAttr("height");
         $(this).wrap("<div class='videowrapper'></div>");
     });
-
-
-// var cards = document.querySelectorAll(".card.effect__click");
-//   for ( var i  = 0, len = cards.length; i < len; i++ ) {
-//     var card = cards[i];
-//     clickListener( cardGallery );
-//   }
-
-//   function clickListener(card) {
-//     cardGallery.addEventListener( "click", function() {
-//       var c = this.classList;
-//       c.contains("flipped") === true ? c.remove("flipped") : c.add("flipped");
-//     });
-//   }
-
-
-
-
-
-        
-    var init = function() {
-  var card = document.getElementById('card');
-  
-  document.getElementById('flip').addEventListener( 'click', function(){
-    card.toggleClassName('flipped');
-  }, false);
-};
-
-window.addEventListener('DOMContentLoaded', init, false);
 
 });
 
