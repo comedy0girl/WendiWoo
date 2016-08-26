@@ -1,9 +1,10 @@
 <!-- Begin mobile menu -->
 	<div class="mobile_menu_wrapper">
 	    <div class="menu-side-mobile-menu-container">
-
-	   		<a id="close_mobile_menu" href="javascript:;"><i class="fa fa-times fa-3"></i></a>
-
+	    <ul class="closeRow">
+	   		<li><a id="close_mobile_menu" href="javascript:;"><i class="fa fa-times fa-3"></i></a></li>
+	   		<li class="sliderTitle">Wendi Mc Fansite</li>
+	   	</ul>
 	    <div class="card effect__click">
 	    	
 		     <div class="card__front">
@@ -23,14 +24,15 @@
 			   		<?php dynamic_sidebar('right_sidebar'); ?>
 				</div>
 
-				<div class="smallScreenNav nav-smSlider">
+				<!-- <div class="smallScreenNav nav-smSlider">
 					<ul>
+						<li class="followUs">WendiMC Fans Online</li>
 						<li><a href="https://twitter.com/wendifansite"><i class="fa fa-twitter "></i></a></li>
 						<li><a href="http://instagram.com/wendimc_fansite/"><i class="fa fa-instagram "></i></a></li>
 						<li><a href="https://www.facebook.com/wendimclendoncoveyfan"><i class="fa fa-facebook"></i></a></li>
 					</ul>
 				</div>
-
+ -->
 				<div class="fb-page" data-href="https://www.facebook.com/wendimclendoncoveyfan/" data-tabs="header" data-width="300px" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/wendimclendoncoveyfan/"><a href="https://www.facebook.com/wendimclendoncoveyfan/">Wendi McLendon-Covey Fans</a></blockquote></div></div>
 			        	
 			</div>
