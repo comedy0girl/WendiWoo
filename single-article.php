@@ -1,6 +1,9 @@
 <?php /* Template Name: articles single */ ?>
 
-<?php get_header('general'); ?>
+<?php get_header(); ?>
+
+<div class="row twelve columns bannerImageMain" style="background-image: url('<?php bloginfo('template_url') ?>/wendiStar.jpg'); background-position: top center !important;">
+		</div>
 
 	<div class="news-container twelve columns">
 		<div class="row nine columns articles">

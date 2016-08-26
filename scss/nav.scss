@@ -120,10 +120,20 @@
 .navBySeason, .nav-bar, .gallery-bar {
   ul {
     text-align: center;
+    margin-bottom: 10px;
   }
   li {
     list-style: none;
     display: inline;
+    @media screen and (max-width: 450px){
+      a {
+          font-size: 0.8em;
+          padding: 4px;
+          &:hover {
+            padding: 4px;
+          }
+      }
+  }
   }
   a {
     color: black;
@@ -146,6 +156,7 @@
 
 .gallery-bar {
   margin-bottom: 1em;
+  padding: 0 2px;
   @media screen and (max-width: 450px){
       a {
           font-size: 0.8em;

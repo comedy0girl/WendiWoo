@@ -1,9 +1,11 @@
 
 
-.gallery br {
-    display: none;
-    margin: 0px;
-}
+// .gallery br {
+//     display: none;
+//     margin: 0px;
+// }
+
+// .gallery {clear:both;}
 
 dl.gallery-item {
 	float: left;
@@ -11,23 +13,49 @@ dl.gallery-item {
     padding: 0;
 }
 
-#gallery {
-    margin-bottom: 500px !important;
-}
+// #gallery {
+//     margin-bottom: 500px !important;
+// }
 
 .galleryContent { 
 	height: 100%;
     display: table-cell;   
     vertical-align: middle; 
-    margin: 20px 0;   
+    box-sizing: border-box;
+    p{
+        text-align: center;
+        color: $thirdColor;
+        text-transform: uppercase;
+        letter-spacing: .1rem;
+        @media screen and (max-width: 450px){
+            font-size: 0.8em;
+        }
+    }
 }
 
 
 .galleryContainer {
-    width: 94%;
+    width: 95%;
     position: relative;
-    margin: 0 0 0 -47%;
-    left: 50%;
+    margin: 0 auto;
+    display: table;
+    .gallery{
+        clear: both;
+        text-align: center;
+        width: 95%;
+        margin: 20px auto;
+         @media screen and (max-width: 850px){
+            width: 86%;
+        }
+         @media screen and (max-width: 450px){
+            width: 97%;
+        }
+        @media screen and (max-width: 380px){
+            width: 63%;
+        }
+       
+
+    }
 }
 
 
@@ -41,9 +69,16 @@ dl.gallery-item {
     
 // }
 
+dl.gallery-item{
+     margin-bottom: 10px;
+}
+
 .gallery-item {
     z-index: 1;
     position: relative;
+    height: 175px;
+    width: 175px;
+    margin: 10px;
         &:hover {
             dt.gallery-icon.landscape, dt.gallery-icon.portrait {
             opacity: 1;
@@ -53,8 +88,8 @@ dl.gallery-item {
 
 .wp-caption-text.gallery-caption {
     visibility: hidden;
-     color: white !important;
-    margin:-38px 1px 10px;
+    color: white !important;
+    margin:-46px 1px 10px;
     text-align: center !important;
     background-color: $thirdColor;
     position: relative;
@@ -64,11 +99,13 @@ dl.gallery-item {
 .showIt {
     visibility: visible !important;
      color: white !important;
-    margin:-38px 1px 10px;
+    margin:-46px 1px 10px;
     text-align: center !important;
     background-color: $thirdColor;
     position: relative;
     z-index: 9999;
+    font-size: 0.8em;
+    max-width: 175px;
 
 }
 

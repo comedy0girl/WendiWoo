@@ -66,6 +66,13 @@ img {
 	max-width: 100%;
 }
 
+img.alignright { float: right; margin: 0 0 1em 1em; }
+img.alignleft { float: left; margin: 0 1em 1em 0; }
+img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
+.alignright { float: right; }
+.alignleft { float: left; }
+.aligncenter { display: block; margin-left: auto; margin-right: auto; }
+
 .headerBorder {
     border-bottom: 1px solid $thirdColor;
     width: 32%;
@@ -114,6 +121,14 @@ div#text {
     	border: 1px solid $fourthColor;
     	padding: 30px 10px;
     	margin-bottom: 20px;
+    }
+    h2{
+    	text-align: center;
+    text-transform: uppercase;
+    color: #5AA0A0;
+    font-family: cardoregular;
+    padding: 0!important;
+    font-size: 1.1em;
     }
     p {
     	font-family: $paragraphFont;
@@ -285,6 +300,8 @@ span.text-half{
 
 }
 
+.aligncenter, img.aligncenter { clear: both; display: block; margin-left: auto; margin-right: auto; }
+
 
 .row.twelve.columns.footerLink {
     padding: 20px;
@@ -307,10 +324,15 @@ span.text-half{
    			color: white;
    		}
    		@media screen and (max-width: 500px){
-			font-size: 0.8em;
+			font-size: 0.7em;
 		}
 		@media screen and (max-width: 380px){
 			font-size: 0.6em;
+			li{
+				padding: 0 2px;
+			}
+			
+
 		}
    	}
 }
