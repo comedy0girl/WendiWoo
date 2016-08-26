@@ -1,4 +1,4 @@
-<?php /*Template Name: biography page*/ ?>
+<?php /* Template Name: biography page */ ?>
 
 <?php get_header('general'); ?>
 

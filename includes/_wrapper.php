@@ -11,7 +11,7 @@
 	  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 	  <meta charset="utf-8">
 	  <title><?php if(is_home()) { echo bloginfo("name"); } else { echo wp_title(" | ", false, right); echo bloginfo("name"); } ?></title>
-	  <meta name="description" content="Fan site dedicated to actress Wendi McLendon-Covey">
+	  <meta name="description" content="Fan site dedicated to actress Wendi McLendon-Covey star of The Goldbergs, Reno 911 and Bridesmaids">
 	  <meta name="author" content="">
 
 	  

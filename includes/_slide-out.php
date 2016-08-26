@@ -1,8 +1,8 @@
 <!-- Begin mobile menu -->
 	<div class="mobile_menu_wrapper">
-		<a id="close_mobile_menu" href="javascript:;"><i class="fa fa-times fa-3"></i></a>
-		 	
 	    <div class="menu-side-mobile-menu-container">
+
+	   		<a id="close_mobile_menu" href="javascript:;"><i class="fa fa-times fa-3"></i></a>
 
 	    <div class="card effect__click">
 	    	
@@ -12,15 +12,23 @@
 					<li><a href="/biography/">Wendi</a></li>
 					<li><a href="/gallery-2/">Gallery</a></li>
 					<li><a href="/articlesmain/">Press</a></li>
-					<!-- <li><a href="/audio/">Audio</a></li> -->
+					<li><a href="/audio/">Audio</a></li>
 					<!-- <li><a href="/fan-downloads/">Downloads</a></li> -->
-					<li><a href="http://www.podcastgarden.com/podcast/goldnerds">The Goldnerds Podcast</a></li>
 					<li><a href="/contact/">Website Info</a></li>
+					<li><a href="http://www.podcastgarden.com/podcast/goldnerds">The Goldnerds Podcast</a></li>
 			    </ul>
 			    </div>
 
-			  <div id="text-2" class="widget widget_text"><h2>About Wendi</h2>			
-			    <?php dynamic_sidebar('right_sidebar'); ?>
+			  	<div id="text-2" class="widget widget_text">
+			   		<?php dynamic_sidebar('right_sidebar'); ?>
+				</div>
+
+				<div class="smallScreenNav nav-smSlider">
+					<ul>
+						<li><a href="https://twitter.com/wendifansite"><i class="fa fa-twitter "></i></a></li>
+						<li><a href="http://instagram.com/wendimc_fansite/"><i class="fa fa-instagram "></i></a></li>
+						<li><a href="https://www.facebook.com/wendimclendoncoveyfan"><i class="fa fa-facebook"></i></a></li>
+					</ul>
 				</div>
 
 				<div class="fb-page" data-href="https://www.facebook.com/wendimclendoncoveyfan/" data-tabs="header" data-width="300px" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/wendimclendoncoveyfan/"><a href="https://www.facebook.com/wendimclendoncoveyfan/">Wendi McLendon-Covey Fans</a></blockquote></div></div>
