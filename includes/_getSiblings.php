@@ -15,14 +15,14 @@ $nextID = ( isset($pages[$current+1]) ) ? $pages[$current+1] : '';
 <nav id="pagination">
     <?php if (!empty($prevID)) { ?>
     <div class="alignleft">
-    <a href="<?php  echo get_permalink($prevID); ?>"
-      title="<?php  echo get_the_title($prevID); ?>" class="previous-page"><?php  echo get_the_title($prevID); ?></a>
+    <a href="<?php echo get_permalink($prevID); ?>"
+      title="<?php echo get_the_title($prevID); ?>" class="previous-page"><?php  echo get_the_title($prevID); ?></a>
     </div>
     <?php }
     if (!empty($nextID)) { ?>
     <div class="alignright">
     <a href="<?php echo get_permalink($nextID); ?>" 
-     title="<?php  echo get_the_title($nextID); ?>" class="next-page"><?php  echo get_the_title($nextID); ?></a>
+     title="<?php  echo get_the_title($nextID); ?>" class="next-page"><?php echo get_the_title($nextID); ?></a>
     </div>
     <?php } ?>
 </nav><!-- #pagination -->

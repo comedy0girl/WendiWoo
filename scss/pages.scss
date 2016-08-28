@@ -1,18 +1,42 @@
 .row.twelve.columns.articles {
 	padding: 20px;
+	ul {
+		padding-left: 20px;
+		margin-bottom: 40px;
+	}
+	h1{
+		font-size: 2em;
+	}
 	h5 {
 		font-size: 1.5em;
-		color: $thirdColor;
+		color: white;
+		color: white;
+	    background-color: $thirdColor;
+	    padding-left: 10px;
 	}
 }
 
 .moreArticles {
-	border: 1px solid $fourthColor;
 	padding: 10px;
 	text-align: center;
 	margin: 25px 0;
 	li {
 	padding: 0 10px;
+	}
+	h2{
+		font-family: cardoregular;
+		color: $thirdColor;
+		font-size: 1.5em;
+    	margin-bottom: 20px;
+	}
+
+	.alignleft, .alignright {
+		text-transform: uppercase;
+		background-color: $thirdColor;
+		padding: 20px;
+		a {
+			color: white;
+		}
 	}
 
 }
@@ -24,7 +48,7 @@
 .wendiInfo, .siteInfo{
 	border: 1px solid $fourthColor;
     	padding: 30px 5px;
-    	margin-bottom: 20px;
+    	margin: 20px;
 }
 
 .sideOptions {

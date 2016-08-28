@@ -39,6 +39,10 @@
 			<?php endwhile; else : ?>
 			<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
 			<?php endif; ?>
+
+			<div class="row nine columns post-nav">
+				<?php wp_pagenavi(); ?>
+			</div><!--post nav-->
 			
 		</div><!-- content post -->
 
@@ -48,21 +52,6 @@
 
 
 	</div><!--news container end -->
-
-	<div class="row mainGallery twelve columns">
-	
-		<!-- <div class="gallerySection">
-			<h1>Gallery</h1>
-			<?php
-				$my_id = 428;
-				$post_id_428 = get_post($my_id);
-				$content = $post_id_428->post_content;
-				$content = apply_filters('the_content', $content);
-				$content = str_replace(']]>', ']]>', $content);
-				echo $content;
-			?>
-		</div> -->
-	</div>
 
 	<div class="clear"></div>
 	<div class="row twelve columns instagramDesktop">

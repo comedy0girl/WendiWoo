@@ -1,9 +1,9 @@
 
 
-.gallery br {
-    display: none;
-    margin: 0px;
-}
+ .gallery br {
+     display: none;
+     margin: 0px;
+ }
 
 // .gallery {clear:both;}
 
@@ -35,10 +35,11 @@ dl.gallery-item {
 
 
 .galleryContainer {
-    width: 95%;
+    width: 96%;
     position: relative;
     margin: 0 auto;
     display: table;
+    margin-bottom: 20px;
     .gallery{
         clear: both;
         text-align: center;

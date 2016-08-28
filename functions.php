@@ -17,7 +17,6 @@ add_filter( 'embed_oembed_html', 'alx_embed_html', 10, 3 );
 add_filter( 'video_embed_html', 'alx_embed_html' ); // Jetpack
 
 // widgets and sidebars 
-
 if ( function_exists('register_sidebar') ) {
     register_sidebar(array(
    'name' => 'right_sidebar',
@@ -67,6 +66,32 @@ function add_fb_open_graph_tags() {
 <?php   }
 }
 
+function my_excerpt($text, $excerpt){
+  
+    if ($excerpt) return $excerpt;
+
+    $text = strip_shortcodes( $text );
+
+    $text = apply_filters('the_content', $text);
+    $text = str_replace(']]>', ']]>', $text);
+    $text = strip_tags($text);
+    $excerpt_length = apply_filters('excerpt_length', 55);
+    $excerpt_more = apply_filters('excerpt_more', ' ' . '[...]');
+    $words = preg_split("/[\n
+   ]+/", $text, $excerpt_length + 1, PREG_SPLIT_NO_EMPTY);
+    if ( count($words) > $excerpt_length ) {
+            array_pop($words);
+            $text = implode(' ', $words);
+            $text = $text . $excerpt_more;
+    } else {
+            $text = implode(' ', $words);
+    }
+
+    return apply_filters('wp_trim_excerpt', $text, $excerpt);
+}
+
+
+
 /**
  * Attach a class to linked images' parent anchors
  * e.g. a img => a.img img
@@ -88,14 +113,12 @@ add_theme_support('post-thumbnails');
 
 if ( function_exists( 'add_image_size' ) ) {
 add_image_size( 'main-gallery-size', 175, 175, array('center', 'center') ); //(cropped)
-add_image_size( 'lower-gallery-size', 150, 150, array('center', 'center') ); //(cropped)
 }
 
 add_filter( 'image_size_names_choose', 'my_custom_sizes' );
 function my_custom_sizes( $sizes ) {
 return array_merge( $sizes, array(
 'main-gallery-size' => __( 'Main Gallery Thumb' ),
-'lower-gallery-size' => __( 'Lower Gallery Thumb' ),
 
 ) );
 }

@@ -11,7 +11,7 @@
 		    	<ul id="mobile_main_menu" class="mobile_main_nav">
 		    		<li><a href="/">Home</a></li>
 					<li><a href="/biography/">Wendi</a></li>
-					<li><a href="/gallery-2/">Gallery</a></li>
+					<li><a href="/gallery/">Gallery</a></li>
 					<li><a href="/articlesmain/">Press</a></li>
 					<!-- <li><a href="/audio/">Audio</a></li> -->
 					<!-- <li><a href="/fan-downloads/">Downloads</a></li> -->

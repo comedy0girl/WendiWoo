@@ -2,11 +2,14 @@
 
 <?php get_header(); ?>
 
-<div class="row twelve columns bannerImageMain" style="background-image: url('<?php bloginfo('template_url') ?>/wendiStar.jpg'); background-position: top center !important;">
-		</div>
+	<div class="row twelve columns bannerImageMain" 
+	style="background-image: url('<?php bloginfo('template_url') ?>/wendiStar.jpg'); background-position: top center !important;">
+	</div> 
+
+	
 
 	<div class="news-container twelve columns">
-		<div class="row nine columns articles">
+		<div class="row twelve columns articles">
 			
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 			<?php the_content(__('(more...)')); ?>
@@ -25,10 +28,6 @@
 			</div>
 
 		</div><!-- nine columns -->
-				
-		<div class="row three columns sidebar">
-			<?php get_sidebar('general'); ?>
-		</div> 
 		
 	</div>
 <?php get_footer(); ?>

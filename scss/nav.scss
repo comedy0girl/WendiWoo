@@ -154,9 +154,14 @@
 
 }
 
+
 .gallery-bar {
   margin-bottom: 1em;
   padding: 0 2px;
+  ul {
+    max-width: 75%;
+    margin: 0 auto;
+  }
   @media screen and (max-width: 450px){
       a {
           font-size: 0.8em;
@@ -228,11 +233,8 @@
 }
 
 .menu-side-mobile-menu-container {
-  // border: 1px solid $fourthColor;
   padding: 10px;
-
   div#text-2{
-    border: 1px solid;
     padding: 10px;
     font-family: $paragraphFont;
   }
