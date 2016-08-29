@@ -88,18 +88,8 @@ dl.gallery-item{
 }
 
 .wp-caption-text.gallery-caption {
-    visibility: hidden;
+     visibility: visible !important;
     color: white !important;
-    margin:-46px 1px 10px;
-    text-align: center !important;
-    background-color: $thirdColor;
-    position: relative;
-    z-index: 9999;
-}
-
-.showIt {
-    visibility: visible !important;
-     color: white !important;
     margin:-46px 1px 10px;
     text-align: center !important;
     background-color: $thirdColor;
@@ -107,8 +97,8 @@ dl.gallery-item{
     z-index: 9999;
     font-size: 0.8em;
     max-width: 175px;
-
 }
+
 
 dt.gallery-icon.landscape, dt.gallery-icon.portrait {
     height: 175px !important;

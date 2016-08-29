@@ -22,14 +22,7 @@ $(document).ready(function(){
 
 
 
-    $(".gallery-item").hover(
-  function () {
-    $(this).find('.gallery-caption').addClass("showIt");
-  },
-  function () {
-    $(this).find('.gallery-caption').removeClass("showIt");
-  }
-);
+ 
 
 
 
