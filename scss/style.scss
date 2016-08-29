@@ -148,7 +148,7 @@ div#text {
 .post-wrapper:first-child {
 	width: 90%;
 	.postImage {
-		width: 100%;
+		max-width: 100%;
 	}
 }
 
@@ -160,6 +160,10 @@ div#text {
 		width: 45%;
 		float: left;
 	}
+	img.img-wrapper {
+	    max-width: 450px;
+	   
+    }
 	
 	h1 {
 		margin: 0px;

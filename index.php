@@ -33,12 +33,12 @@
 
 				<?php if (!empty($thumb)) : ?>
 
-				<a href="<?php echo get_permalink(); ?>" class="img-wrapper">
-					<img src="<?php echo $thumb; ?>" alt="">
+				<a href="<?php echo get_permalink(); ?>">
+					<img class="img-wrapper" src="<?php echo $thumb; ?>" alt="">
 				</a>
 	
 				<p><?php $words = str_word_count(get_the_excerpt(), 1);
-			  	echo implode(' ', array_slice($words, 0, 25)); ?>...<a href="<?php the_permalink(); ?>">Read More</a></p>
+			  	echo implode(' ', array_slice($words, 0, 10)); ?>...<a href="<?php the_permalink(); ?>">Read More</a></p>
 	
 			<?php else : ?>
 
@@ -47,7 +47,7 @@
 			<?php endif; ?>	
 					
 
-			<div class="postShare"><?php echo wpfai_social(); ?></div>
+			<!-- <div class="postShare"><?php echo wpfai_social(); ?></div> -->
 			</div><!-- post wrapper ends -->
 			
 			<?php endwhile; else : ?>
@@ -59,6 +59,8 @@
 			</div><!--post nav-->
 			
 		</div><!-- content post -->
+
+
 
 		<div class="row three columns sidebar">
 			<?php get_sidebar('general'); ?>
