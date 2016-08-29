@@ -270,9 +270,15 @@ div#text {
     float: left;
     padding: 10px;
     margin-bottom: 20px;
+    @media screen and (max-width: 620px) { 
+    	padding: 5px;
+    }
     h3 {
     	font-size: 2rem;
     	margin-bottom: 0px;
+    	@media screen and (max-width: 620px) {
+    		font-size: 1.5rem;
+    	}
     }
 
 }
