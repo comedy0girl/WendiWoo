@@ -258,7 +258,10 @@ div#text {
 .row.relatedposts {
 	text-align: center;
 	 h2 {
-    	margin-bottom: 0px;
+    	font-family: cardoregular;
+		color: $thirdColor;
+		font-size: 1.5em;
+    	margin-bottom: 20px;
     }
 }
 
@@ -266,12 +269,18 @@ div#text {
    width: 30%;
     float: left;
     padding: 10px;
+    margin-bottom: 20px;
     h3 {
     	font-size: 2rem;
     	margin-bottom: 0px;
     }
 
 }
+
+.randPostImg{
+	max-height: 200px !important;
+	width: auto;
+ }
 
 div#related_posts {
     margin: 0 auto;

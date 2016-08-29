@@ -1,5 +1,9 @@
+<?php 
+/* this is used for the articles single page */
 
-<?php $ancestors = get_post_ancestors( $post->ID );
+
+$ancestors = get_post_ancestors( $post->ID );
+
 /* Get the top Level page->ID count base 1, array base 0 so -1 */ 
 $parent = ($ancestors) ? $ancestors[0]: $post->ID;
 $pagelist = get_pages('child_of='. $parent .'&sort_column=menu_order&sort_order=asc');
