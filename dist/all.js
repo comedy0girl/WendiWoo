@@ -1,3 +1,4 @@
+
 $(document).ready(function(){
     
     $("li#clickme").click(function() {
@@ -18,13 +19,6 @@ $(document).ready(function(){
    $("li#shareMe").click(function() {
         $(".body").addClass("mask");
     });
-
-
-
-
- 
-
-
 
     $('a.back-to-top').click(function() {
     $('html, body').animate({

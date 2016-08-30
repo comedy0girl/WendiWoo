@@ -3,7 +3,7 @@
 	<div class="news-container twelve columns">
 
 		<div class="row twelve columns bannerImageMain" style="background-image: url('<?php bloginfo('template_url') ?>/wendiStar.jpg'); background-position: top center !important;">
-			</div>
+		</div>
 			
 		<div class="row nine columns content-post">
 			<?php query_posts( array( 'paged' => get_query_var('paged') ) ); ?>
@@ -37,8 +37,8 @@
 					<img class="img-wrapper" src="<?php echo $thumb; ?>" alt="">
 				</a>
 	
-				<p><?php $words = str_word_count(get_the_excerpt(), 1);
-			  	echo implode(' ', array_slice($words, 0, 10)); ?>...<a href="<?php the_permalink(); ?>">Read More</a></p>
+				<?php $words = str_word_count(get_the_excerpt(), 1);
+			  		echo implode(" ", array_slice($words, 5)); ?>...<a href="<?php the_permalink(); ?>">Read More</a>
 	
 			<?php else : ?>
 

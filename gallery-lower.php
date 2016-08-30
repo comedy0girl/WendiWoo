@@ -1,6 +1,6 @@
 <?php /*Template Name: lower-gallery*/ ?>
 
-<?php get_header('gallery'); ?>
+<?php get_header('gallery-lower'); ?>
 
 <div id="menuWrapper">
 			<?php include (TEMPLATEPATH . '/includes/_gallery-nav.php'); ?>
