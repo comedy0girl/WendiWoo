@@ -37,9 +37,11 @@
 					<img class="img-wrapper" src="<?php echo $thumb; ?>" alt="">
 				</a>
 	
-				<?php $words = str_word_count(get_the_excerpt(), 1);
-			  		echo implode(" ", array_slice($words, 5)); ?>...<a href="<?php the_permalink(); ?>">Read More</a>
-	
+				<!-- <?php $words = str_word_count(get_the_excerpt(), 1);
+			  		echo implode(' ', array_slice($words, 5)); ?>...<a href="<?php the_permalink(); ?>">Read More</a> -->
+				
+			  		<?php echo wpse_custom_wp_trim_excerpt($get_the_excerpt, 20); ?>
+
 			<?php else : ?>
 
 				<?php the_content(); ?>
