@@ -6,6 +6,9 @@ wp_deregister_script('jquery');
 wp_register_script('jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js'); 
 wp_enqueue_script('jquery'); 
 
+// Pull Masonry from the core of WordPress
+wp_enqueue_script( 'masonry' );
+
 
 //   Add responsive container to embeds
 // /* ------------------------------------  
@@ -36,33 +39,38 @@ if ( function_exists('register_sidebar') ) {
 
 }
 
+//Adding the Open Graph in the Language Attributes
+function add_opengraph_doctype( $output ) {
+    return $output . ' xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml"';
+  }
+add_filter('language_attributes', 'add_opengraph_doctype');
 
-// Facebook Open Graph
-add_action('wp_head', 'add_fb_open_graph_tags');
-function add_fb_open_graph_tags() {
-  if (is_single()) {
-    global $post;
-    if(get_the_post_thumbnail($post->ID, 'thumbnail')) {
-      $thumbnail_id = get_post_thumbnail_id($post->ID);
-      $thumbnail_object = get_post($thumbnail_id);
-      $image = $thumbnail_object->guid;
-    } else {  
-      $image = ''; // Change this to the URL of the logo you want beside your links shown on Facebook
-    }
-    //$description = get_bloginfo('description');
-    $description = my_excerpt( $post->post_content, $post->post_excerpt );
-    $description = strip_tags($description);
-    $description = str_replace("\"", "'", $description);
-?>
-<meta property="og:title" content="<?php the_title(); ?>" />
-<meta property="og:type" content="article" />
-<meta property="og:image" content="<?php echo $image; ?>" />
-<meta property="og:url" content="<?php the_permalink(); ?>" />
-<meta property="og:description" content="<?php echo $description ?>" />
-<meta property="og:site_name" content="<?php echo get_bloginfo('name'); ?>" />
+//Lets add Open Graph Meta Info
 
-<?php   }
+function insert_fb_in_head() {
+  global $post;
+  if ( !is_singular()) //if it is not a post or a page
+    return;
+        echo '<meta property="fb:admins" content="YOUR USER ID"/>';
+        echo '<meta property="og:title" content="' . get_the_title() . '"/>';
+        echo '<meta property="og:type" content="article"/>';
+        echo '<meta property="og:url" content="' . get_permalink() . '"/>';
+        echo '<meta property="og:site_name" content="Your Site NAME Goes HERE"/>';
+  if(!has_post_thumbnail( $post->ID )) { //the post does not have featured image, use a default image
+    $default_image="http://example.com/image.jpg"; //replace this with a default image on your server or an image in your media library
+    echo '<meta property="og:image" content="' . $default_image . '"/>';
+  }
+  else{
+    $thumbnail_src = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'medium' );
+    echo '<meta property="og:image" content="' . esc_attr( $thumbnail_src[0] ) . '"/>';
+  }
+  echo "
+";
 }
+add_action( 'wp_head', 'insert_fb_in_head', 5 );
+
+
+
 
 
 function wpse_allowedtags() {

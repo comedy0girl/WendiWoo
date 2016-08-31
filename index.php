@@ -5,10 +5,11 @@
 		<div class="row twelve columns bannerImageMain" style="background-image: url('<?php bloginfo('template_url') ?>/wendiStar.jpg'); background-position: top center !important;">
 		</div>
 			
-		<div class="row nine columns content-post">
+		<div class="row nine columns content-post" >
 			<?php query_posts( array( 'paged' => get_query_var('paged') ) ); ?>
 			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-			<div class="post-wrapper">
+			<div class="post-wrapper" id="masonryContainer">
+				<div class="thePost">
 				<h1><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h1>
 
 				<div class="postInfo">
@@ -49,7 +50,8 @@
 			<?php endif; ?>	
 					
 
-			<!-- <div class="postShare"><?php echo wpfai_social(); ?></div> -->
+			<div class="postShare"><?php echo wpfai_social(); ?></div>
+			</div><!--the post -->
 			</div><!-- post wrapper ends -->
 			
 			<?php endwhile; else : ?>
@@ -78,4 +80,20 @@
 	   		 <!-- LightWidget WIDGET --><script src="//lightwidget.com/widgets/lightwidget.js"></script><iframe id="instagram" src="//lightwidget.com/widgets/7cb700b4ad1253dd8f7c7c9a98c07256.html" id="lightwidget_7cb700b4ad" name="lightwidget_7cb700b4ad"  scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
   			</div>
 	</div>
+
+
+	<script type="text/javascript">
+    $(window).load(function() {
+        
+        var $container = $('#masonryContainer');
+         $container.imagesLoaded( function () { 
+            
+              var container = document.querySelector('#masonryContainer');
+              var msnry = new Masonry( container, {
+                itemSelector: '.thePost',
+                columnWidth: '.thePost',              
+              });  
+         }
+        });    
+</script>
 <?php get_footer(); ?>
