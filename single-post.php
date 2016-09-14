@@ -28,7 +28,8 @@
 						
 					<?php the_content(); ?>
 
-					<div class="postShare"><?php echo wpfai_social(); ?></div>
+
+					<div class="row postShare"><?php echo wpfai_social(); ?></div>
 
 				</div><!-- post wrapper ends -->
 			

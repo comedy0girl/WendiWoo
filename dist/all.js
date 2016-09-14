@@ -66,9 +66,6 @@ $(document).ready(function(){
 
  
     //wrap all iframe videos in class to make responsive
-    // $('iframe').wrap("<div class='videowrapper'></div>");
-
-
     var $iframes = $("iframe");
 
     $iframes.each(function () {

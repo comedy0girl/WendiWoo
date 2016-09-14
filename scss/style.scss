@@ -57,6 +57,10 @@ hr {
 	color: $thirdColor;
 }
 
+p{
+	clear:both;
+}
+
 
 .clear {
     clear:both;
@@ -144,12 +148,13 @@ div#text {
 .instagramDesktop {
 	text-align: center;
 }
- .post-wrapper:first-child {
+
+/**.post-wrapper:first-child {
 	width: 90%;
 	.postImage {
 		max-width: 100%;
 	}
-} 
+} **/
 
 .post-wrapper {
 	text-align: center;
@@ -236,8 +241,8 @@ div#text {
 		font-size: 2em;
 	}
 	a {
-		text-decoration: none;
-		color: $mainColor !important;
+		
+		color: $thirdColor !important;
 	}
 	.postInfo {
 		padding: 0 10px;
@@ -410,4 +415,12 @@ a.back-to-top {
 	a {
 		color: white !important;
 	}
+}
+
+ul.wpfai-list {
+	text-align: center;
+}
+
+img.img-wrapper {
+	max-height: 400px;
 }

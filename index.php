@@ -8,8 +8,8 @@
 		<div class="row nine columns content-post" >
 			<?php query_posts( array( 'paged' => get_query_var('paged') ) ); ?>
 			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-			<div class="post-wrapper" id="masonryContainer">
-				<div class="thePost">
+			<div class="post-wrapper">
+				<div class="thePost" id="masonryContainer">
 				<h1><a href="<?php echo get_permalink(); ?>"><?php the_title(); ?></a></h1>
 
 				<div class="postInfo">
@@ -50,7 +50,7 @@
 			<?php endif; ?>	
 					
 
-			<div class="postShare"><?php echo wpfai_social(); ?></div>
+			
 			</div><!--the post -->
 			</div><!-- post wrapper ends -->
 			
@@ -58,9 +58,7 @@
 			<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
 			<?php endif; ?>
 
-			<div class="row nine columns post-nav">
-				<?php wp_pagenavi(); ?>
-			</div><!--post nav-->
+			<!--  --><!--post nav-->
 			
 		</div><!-- content post -->
 
@@ -82,18 +80,24 @@
 	</div>
 
 
-	<script type="text/javascript">
+<script type="text/javascript">
     $(window).load(function() {
         
-        var $container = $('#masonryContainer');
-         $container.imagesLoaded( function () { 
+        var $masonryContainer = $('#masonryContainer');
+         $masonryContainer.imagesLoaded( function () { 
             
-              var container = document.querySelector('#masonryContainer');
-              var msnry = new Masonry( container, {
-                itemSelector: '.thePost',
-                columnWidth: '.thePost',              
-              });  
-         }
+              var masonryContainer = document.querySelector('#masonryContainer');
+              $('#masonryContainer').masonry({
+			      itemSelector: '.thePost',
+			  
+			  });
+
+              // var msnry = new Masonry( container, {
+              //   itemSelector: '.thePost',
+              //   columnWidth: 100, 
+              //   gutter: 10             
+              // });  
+         });
         });    
 </script>
 <?php get_footer(); ?>

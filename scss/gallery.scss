@@ -2,10 +2,9 @@
 
  .gallery br {
      display: none;
-     margin: 0px;
  }
 
-// .gallery {clear:both;}
+//.gallery {clear:both;}
 
 dl.gallery-item {
 	float: left;
@@ -112,5 +111,12 @@ dt.gallery-icon.landscape, dt.gallery-icon.portrait {
 img {
     max-width: 100%;
     height: auto;
+}
+
+#masonryContainer .thePost {
+    background-color: gray;
+    width: 100px;
+    float: left;
+    margin-bottom: 10px;
 }
 
